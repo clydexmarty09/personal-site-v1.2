@@ -3,6 +3,7 @@
 
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="This site illiustrates basic MathML utlization: Einstein's famous relativity formula"> 
    <link rel="stylesheet" href="style.csss">
    <link rel="icon" href ="/favicon.ico" type="image/x-icon">
    <style> 
@@ -46,6 +47,12 @@
                 <option value="es"> Spanish </option>
             </optgroup>
         </select>
+        <section> 
+            <br>
+            <label for="site-search"> Looking for something specific? Search it here: </label>
+            <input type="search" id="site-search" name="q" />
+            <button> Search </button>
+        </section>
     </header>
     <main>
         <!-- might delete hgroup later; not really needed here-->
@@ -100,8 +107,22 @@
                 </table>          
                 <!-- empty template below-->
                 <template id="bio"> </template>      
+            
             </section>
-    
+            <!-- Extra section for MathML extra credit-->
+            <aside> 
+                <p> MathML Extra Credit</p>
+                <math>
+                    <mi> E </mi> <mo> =  </mo> <mi> m</mi>
+                    <msup> 
+                        <mi> c</mi><mn> 2 </mn>
+                    </msup> 
+                </math>
+            </aside>
+            <!-- 2) Extra credit question: I presume the reason for this is because for the longest time, only Firefox supported MathML. This 
+            resulted in bad "translations" across multiple browsers.-->
+            <!-- -->
+            <!-- END -->
     </main>
     <section>
         <br><br>
