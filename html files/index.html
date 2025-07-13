@@ -1,3 +1,4 @@
+<!DOCTYPE html> 
 <html lang="en">
 <head>
 
@@ -8,7 +9,7 @@
    <link rel="icon" href ="/favicon.ico" type="image/x-icon">
    <style> 
         blockquote {
-            margin: 1px solid gray;;
+            margin: 1px gray;
         }
     </style>
    <!-- link might be pointless right now -->
@@ -20,7 +21,7 @@
     <noscript> 
         <p><strong> Javascript is disabled! </strong></p>
     </noscript>
-    <audio src="../sounds/8-bit-menu.mp3" autoplay loop ></audio>
+    <audio src="sounds/8-bit-menu.mp3" autoplay loop ></audio>
     <header>
         <label for="theme"> Toggle Theme </label>
         <input list="themes" id="theme" name="theme">
@@ -47,19 +48,16 @@
                 <option value="es"> Spanish </option>
             </optgroup>
         </select>
-        <section> 
+        <aside> 
             <br>
             <label for="site-search"> Looking for something specific? Search it here: </label>
-            <input type="search" id="site-search" name="q" />
+            <input type="search" id="site-search" name="q">
             <button> Search </button>
-        </section>
+        </aside>
     </header>
     <main>
-        <!-- might delete hgroup later; not really needed here-->
-      
-        <h2> Choose your fighter: </h2>
-    
             <section id="char_select">
+                <h2> Choose your fighter: </h2>
                 <a href="cs.html"> <i> COMPUTER SCIENCE </i></a> 
                 <span> 
                     <svg width="5" height="5"> 
@@ -99,7 +97,7 @@
                         <td>
                             <!-- insert stuff here -->
                             <figure>
-                                <img src="../media/pixilart-drawing_1.png" alt="CLYDE">
+                                <img src="media/pixilart-drawing_1.png" alt="CLYDE">
                                 <figcaption> I'm Clyde and I'm a <em>web developer</em> based in San Diego :)</figcaption>
                             </figure>
                         </td>
