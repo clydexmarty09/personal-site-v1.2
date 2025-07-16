@@ -1,5 +1,21 @@
-<style> 
-body {
-    background-image: url(media/css_bg/cyperpunk-city.jpg);
+ body {
+    background-image: url("media/css_bg/autumn.jpg");
+    background-size: cover;
+    -display:flex;
+    -align-items: center;
+ }
+
+ nav { 
+    display: flex;
+    align-items: center;
+    font-family: monospace; 
+    font-size: 20px;
+    gap: 20px;
+
+ }
+h1 {
+    font-family:monospace;
+    font-size :50px;
+    
+    
 }
-</style>
