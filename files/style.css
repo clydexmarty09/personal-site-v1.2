@@ -72,19 +72,22 @@ nav {
 }
 
 nav a {
-   -border: 1.5px solid white; 
+   
    outline: 1.5px solid white; 
-   outline-offset: 6px; 
+   outline-offset: 6px;
+   
+   /* adds a nice hover effect */
+   transition:transform 0.1s ease; 
 }
 nav a:hover {
-   -background-color: aliceblue;
-   -outline: 2px solid whitesmoke;
-   -outline-offset: 2px;
+   
+   outline: 2px solid whitesmoke;
+   outline-offset: 2px;
    transform:translateY(-6px);
 }
 
-nav a:active {
-   transform:translate(6px); 
+nav a:hover:active {
+   transform:translateY(6px);
 }
 
 nav a:focus {
