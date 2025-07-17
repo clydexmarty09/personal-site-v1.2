@@ -19,20 +19,21 @@
     </noscript>
     <audio src="sounds/8-bit-menu.mp3" autoplay loop ></audio>
     <header>
-        <label for="theme"> Toggle Theme </label>
+        <!--<label for="theme"> Toggle Theme </label>
         <input list="themes" id="theme" name="theme">
         
         <datalist id="themes">
             <option value="Dark"> </option>
             <option value="Light"> </option>
-        </datalist> 
+        </datalist>  -->
         
         <!-- custom tag below -->
         <font-toggle> </font-toggle>
 
+        <!--
         <label for="website_complete"> Website Completion Bar </label>
 
-        <progress id="website_complete" value="20" max="100"> </progress>
+        <progress id="website_complete" value="20" max="100"> </progress> -->
 
         <h1> Welcome to my site! First off... </h1>  
 
@@ -44,20 +45,25 @@
                 <option value="es"> Spanish </option>
             </optgroup>
         </select>
+        <!---
         <aside> 
             <br>
             <label for="site-search"> Looking for something specific? Search it here: </label>
             <input type="search" id="site-search" name="q">
             <button> Search </button>
-        </aside>
+        </aside> -->
     </header>
     <main>
             <nav>
                 <h2> Choose your fighter: </h2>
-                <a href="cs.html"> <i> COMPUTER SCIENCE <br> </i></a> 
+                <a href="cs.html" class="fighter-link">
+                    <img src="media/sword.png" alt="Computer Science" class ="fighter-img">
+                </a> 
                 
                 <br>
-                <a href = "art.html"> <i> ART AND GAMES </i></a>
+                <a href = "art.html" class ="fighter-link"> 
+                    <img src="media/kite_shield.png" alt="Art and Hobbies Page" class="fighter-img"> 
+                </a>
                 <br>
                 <!-- <del><a href = "art.html"> <i> BLOG (TENTATIVE) </i></a> </del> -->
             </nav>
@@ -154,6 +160,8 @@
                 <dd> <cite> 356 | 8-Bit Chiptune Game Music by <em> nickpanek620 </em>, pixabay.com </cite>  </dd>
                 <dd> <cite> Never Gonna Give You Up by Rick Astley short clip, voicy.network </cite></dd>
                 <dd> <cite> "The man," <em> Yok </em>, opengameart.org </cite> </dd>
+                <dd> <cite> Scimitar Sword Image <em>, AlexCons </em>, opengameart.org </cite> </dd>
+                <dd> <cite> Kite Shield Image <em>, LordNeo </em>, opengameart.org </cite> </dd>
                 <dd> <em> All other artworks are mine </em></dd>
             </dl>
         </section>

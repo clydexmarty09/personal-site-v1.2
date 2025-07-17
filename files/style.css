@@ -11,8 +11,16 @@
 
    padding: 1rem;
    text-align: center; 
-   
+
  }
+
+ /* editing class fighter images */ 
+.fighter-img {
+   width: 70px;
+   height: 70px; 
+   object-fit: cover;
+}
+
  footer {
    background: #222; 
    color: white; 
