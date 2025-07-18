@@ -10,6 +10,8 @@
    --main-height:100vh;
    --text-color:white;
    --box-size:border-box; 
+   --height: 100%; 
+   --font-size: 16px; 
 }
 
 body {
@@ -105,7 +107,7 @@ h1 {
 }
 
 footer {
-   margin: 1.5rem;
+   -margin: 1.5rem;
    padding: 1.5rem;
    background: #222; 
    color: whitesmoke; 
