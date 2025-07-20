@@ -5,7 +5,7 @@
    --layout:flex; 
    --main-display:flex; 
    --display-direction:column; 
-   --main-height:100vh;
+   --main-height:100dvh;
    --text-color:white;
    --main-margin:0; 
    --main-padding:0; 
@@ -19,6 +19,10 @@
 @media screen and (min-width:600px){
    body {
       font-size:18px; 
+   }
+   h1{
+      font-size:2.5rem; 
+      padding:1rem; 
    }
 }
 @media screen and (min-width:900px) {
