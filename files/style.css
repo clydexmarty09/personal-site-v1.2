@@ -167,12 +167,12 @@ footer >p{
 /* Styles for cs.html below */
 /* Iphone displays */ 
 h2 {
-   font-size: 2rem;
+   font-size: 3rem;
    text-shadow:  2px 2px 0 black; 
 }
 .resume{
    padding-top:1.5rem; 
-   font-size: 4rem;
+   font-size: 1rem;
    display: var(--main-display);
    flex-direction: column;
    text-align: left;
@@ -210,8 +210,8 @@ h2 {
    padding-bottom: 1.5rem;
 }
 .static_fighter {
-   width: 3rem;
-   height:3rem; 
+   width: 9rem;
+   height:9rem; 
    max-width:150px ;
    max-height: 150px; 
    object-fit: cover;
