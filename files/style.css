@@ -81,7 +81,7 @@ details {
 }
 
 details summary:hover{
-   transition:transform 0.2 ease;  
+   transition:transform 0.2s ease;  
    transform: translateY(-4px);
 }
  details[open] p {
@@ -108,6 +108,7 @@ figcaption {
 nav { 
    flex-wrap: wrap;
    display: flex;
+   flex-direction: column;
    justify-content: center;
    gap: 6rem;
    transition:transform 0.2s ease; 
@@ -115,15 +116,18 @@ nav {
 }
 
 nav a {
-   outline: 1.5px solid white; 
-   outline-offset: 6px;
    text-decoration: none;
  
 }
 
+nav a img {
+   outline: 1.5px solid white; 
+   outline-offset: 6px; 
+}
+
 nav figure:hover, nav figure:focus-within {
    
-   transform:translateY(-8px);
+   transform:translateY(-6px);
 }
 
 nav figure:hover:active {
@@ -167,8 +171,35 @@ footer >p{
    h1 {
       font-size:4rem; 
    }
+   nav {
+      display: var(--main-display);
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+   }
+   nav figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin:0; 
+      text-align: center;
+    }
+  
+   nav a {
+   text-decoration: none;
+   }
+   
+   nav a img {
+      outline: 1.5px solid white; 
+      outline-offset: 6px; 
+   }
+     
    figcaption {
       font-size:1rem; 
+      -text-decoration: none;
+      -outline:none; 
    }
    details[open] p{
       font-size: 1.2rem;
