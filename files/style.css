@@ -223,6 +223,7 @@ footer >p{
    }
    details[open] p{
       font-size: 1.2rem;
+      align-items: left; 
    }
 
    .resume{
@@ -233,6 +234,7 @@ footer >p{
 
    .resume ul{
       line-height: 2;
+      align-items: left;
    }
   
 }
