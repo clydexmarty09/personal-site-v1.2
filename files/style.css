@@ -61,17 +61,19 @@ body {
  h1 {
    padding: 2rem; 
    font-size :5rem;
+   text-shadow: 2px 2px 0 black; 
 }
 
-#introduction {
-   padding:2rem; 
-
+details {
+   
+   padding: 4rem; 
+   font-size: 1.5rem;
+   text-shadow: 1px 1px 0 black; 
 }
 
-/* Scoped CSS */ 
-#introduction h2{
-   -color:red;
-   text-align: left;
+details summary:hover{
+   transition:transform 0.2 ease;  
+   transform: translateY(-4px);
 }
 
  /* editing class fighter images */ 
@@ -80,8 +82,11 @@ body {
    height: 150px; 
    object-fit: cover;
 }
- /* relative units */ 
-
+figcaption {
+   
+   color: white; 
+   margin-top: 1rem;;
+} 
 nav { 
    display: flex;
    justify-content: center;
