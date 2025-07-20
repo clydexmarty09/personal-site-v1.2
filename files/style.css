@@ -110,12 +110,13 @@ nav {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   gap: 6rem;
+   gap: 3rem;
    transition:transform 0.2s ease; 
  
 }
 
 nav a {
+
    text-decoration: none;
  
 }
@@ -167,8 +168,11 @@ footer >p{
    
    body {
       font-size:1rem; 
+      margin:0; 
+      padding:0; 
    }
    h1 {
+      
       font-size:4rem; 
    }
    nav {
@@ -177,6 +181,7 @@ footer >p{
       flex-direction: row;
       align-items: center;
       justify-content: center;
+      gap:6rem; 
    }
    nav figure {
       display: flex;
