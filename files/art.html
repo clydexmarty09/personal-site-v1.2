@@ -21,6 +21,7 @@
         Selected fighter: <b>ART AND HOBBIES</b>
         
         <img src="media/pixilart-drawing_1.png" alt="man">
+        <!--
         <aside>
             <fieldset>
                 <legend> MUSIC PLAYER </legend>
@@ -28,11 +29,11 @@
                 <pre>
                     356 | 8-Bit Chiptune Game Music by nickpanek620
                     Press <kbd> S </kbd> to skip song 
-                    <!-- custom tag below -->
+                  
                     <player-theme-toggle> </player-theme-toggle>
                 </pre>
             </fieldset>
-        </aside><hr><br>
+        </aside><hr><br>-->
         <div class="art"> 
             <h3> ART </h3>
             <picture>
@@ -41,16 +42,6 @@
             <picture>
                 <img src="media/duality.JPG" height="200" width="150" alt="duality">
             </picture>
-            <!-- Need JS for this to show up -->
-            <dialog> Oh! Did you want to add your own art? Go right ahead! </dialog>
-            <!-- this shows up as giant whitespace so it looks weird on the site -->
-            <aside>
-                <fieldset>
-                    <legend> CANVAS</legend>
-                    <script src="placeholder.js"></script>
-                    <canvas id="canvas" width = "200" height ="400" > </canvas>
-                </fieldset>
-            </aside><hr>
         </div>
         <section> 
             <hgroup> 
@@ -65,42 +56,17 @@
             </ol>
             <p> <em> By the way, this is currently my favorite game! Here's a clip of one of my favorites fights!</em></p>
             <!-- THIS IS JUST A PLACEHOLDER! I'M SORRY, GRADER :)-->
-            <video controls> 
-                <source src="media/important.mp4" type="video/mp4">
-            </video> <hr>
-            <form>
-                <label for="sugg"> <b> Do you have any game suggestions? Type it below! </b></label><br>
-                <textarea id="sugg" name="suggestion"> </textarea>
-                <button type="submit"> Submit</button>
-            </form>
+           
         </section>
 
-    </main>
+    </main><hr>
     <footer>
-        <br>
-        <hr>
+        <p><strong>Contact information</strong> </p>
         <address>
-            <p> Contact information </p>
-            <p> <i> cmarty@ucsd.edu</i></p>
-            <p> <i> (123) 456-789 </i></p>
-            <p> Github: Username</p>
-            <span> 
-                <svg width="5" height="5"> 
-                    <rect x="1" y ="1" width="5" height=10 fill="red"> </rect> 
-                </svg>
-            </span>
-            <p> Linkedin: Username </p>
-            <!-- svg symbols are supposed to line up with the usernames -->
-            <span> 
-                <svg width="5" height="5"> 
-                    <rect x="1" y ="1" width="5" height=10 fill="red"> </rect> 
-                </svg>
-            </span>
-            <form action="/submit-url" method="post">
-                <label for="msg"> Send me a quick message: </label>
-                <input type="text" id="msg" name="message">
-                <button type="submit"> Send </button>
-            </form>
+            <p>  cmarty@ucsd.edu </p>
+            <p>  (123) 456-789 </p>
+            <p> <i>Github </p>
+            <p> Linkedin  </p>
         </address>
     </footer>
 </body>
