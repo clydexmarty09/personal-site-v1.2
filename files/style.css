@@ -227,6 +227,7 @@ footer >p{
    }
 
    .resume{
+      padding-top:1.5rem; 
       font-size: 1rem;
       display: var(--main-display);
       text-align: left;
@@ -236,5 +237,23 @@ footer >p{
       line-height: 2;
       align-items: left;
    }
-  
+
+   .cs_header {
+      margin:1.5rem; 
+      padding:1.5rem; 
+      padding-bottom: 0;
+     
+   }
+   .cs_nav{
+      padding-bottom: 1.5rem;
+   }
+   .static_fighter {
+      width: 9rem;
+      height:9rem; 
+      max-width:150px ;
+      max-height: 150px; 
+      object-fit: cover;
+      outline: solid white; 
+      outline-offset: 4px;
+   } 
 }
