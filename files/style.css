@@ -40,7 +40,7 @@
    }  
 }
 /* QUERIES FOR IPHONE*/
-@media screen and(max-width:599px) {
+@media screen and (max-width:599px) {
 
    .fighter-img {
       width:6rem; 
