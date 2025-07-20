@@ -286,7 +286,8 @@ h2 {
    h2 {
       text-shadow:  2px 2px 0 black; 
    }
-   .resume{
+   /* Change below to .resume {} */
+   .subpage_details {
       padding-top:1.5rem; 
       font-size: 1rem;
       display: var(--main-display);
@@ -295,15 +296,17 @@ h2 {
       padding:1rem; 
       width:100%; 
       border-radius: 1.5rem;
+      /* Testing purposes below */ 
+      -color:red; 
    }
 
-   .resume ul{
+   .subpage_details ul{
       line-height: 2;
       align-items: left;
       list-style-position: outside;
       
    }
-   .resume[open] ul {
+   .subpage_details[open] ul {
       
       text-align: left; 
       margin:0;  
@@ -312,18 +315,18 @@ h2 {
       font-size:0.9rem; 
    }
 
-   .resume[open] summary {
+   .subpage_details[open] summary {
       opacity: 50%;
     
    }
 
-   .cs_header {
+   .subpage_header {
       margin:1.5rem; 
       padding:1.5rem; 
       padding-bottom: 0;
      
    }
-   .cs_nav{
+   .subpage_nav{
       padding-bottom: 1.5rem;
    }
    .static_fighter {
@@ -336,4 +339,6 @@ h2 {
       outline-offset: 4px;
    } 
    /* -------------------------------------*/ 
+   /* STYLES FOR art.html below */
+   
 }
