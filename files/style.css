@@ -3,7 +3,6 @@
    --family-font: "Share Tech Mono", monospace; 
    --signature-font:"Brush Script MT", cursive; 
    --layout:flex; 
-   --main-color:black; 
    --main-display:flex; 
    --display-direction:column; 
    --main-height:100vh;
@@ -15,12 +14,20 @@
    --text-align:center; 
 }
 
+
 html{
    font-size:var(--font-size); 
    margin: var(--main-margin);  
    padding:var(--main-padding); 
    text-align:var(--text-align); 
    width:var(--width); 
+}
+
+
+hr {
+   width: 70vw;
+   opacity: 50%;
+   
 }
 
 header {
@@ -75,6 +82,9 @@ details summary:hover{
    transition:transform 0.2 ease;  
    transform: translateY(-4px);
 }
+ details[open] p {
+   margin-top: 5rem;
+ }
 
  /* editing class fighter images */ 
 .fighter-img {
@@ -106,10 +116,8 @@ nav a {
  
 }
 
-nav figure:hover {
+nav figure:hover, nav figure:focus-within {
    
-   -outline: 2px solid whitesmoke;
-   -outline-offset: 2px;
    transform:translateY(-8px);
 }
 
@@ -117,14 +125,15 @@ nav figure:hover:active {
    transform:translateY(6px);
 }
 
-nav figure:focus {
-   transform:translateY(-6px); 
-}
 
 
 footer {
-   -margin: 1.5rem;
-   -padding: 1.5rem;
-   -background: #222; 
-   color: whitesmoke; 
+   color:var(--text-color); 
+   margin-top: 2rem;
+   margin-bottom: 4rem;
+  
  }
+
+footer >p{
+   text-decoration: underline;
+}
