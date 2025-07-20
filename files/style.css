@@ -68,10 +68,28 @@ body {
    
  }
 
+ /* animation example */ 
+@keyframes h1Slide {
+
+   from {
+      opacity:0; 
+      transform: translateY(-20px);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+nav figure:hover:active {
+   transform:translateY(6px);
+}
+
  h1 {
    padding: 2rem; 
-   font-size :2rem;
+   font-size :4rem;
    text-shadow: 2px 2px 0 black; 
+   animation: h1Slide 0.6s ease forwards; 
 }
 
 details {
@@ -132,9 +150,7 @@ nav figure:hover, nav figure:focus-within {
    transform:translateY(-6px);
 }
 
-nav figure:hover:active {
-   transform:translateY(6px);
-}
+
 
 footer {
    color:var(--text-color); 
