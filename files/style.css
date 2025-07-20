@@ -136,8 +136,6 @@ nav figure:hover:active {
    transform:translateY(6px);
 }
 
-
-
 footer {
    color:var(--text-color); 
    margin-top: 2rem;
@@ -210,11 +208,15 @@ footer >p{
    details[open] p{
       font-size: 1.2rem;
    }
-   aside {
-      text-align:left; 
-      opacity: 50%; 
-      align-self: flex-start;
-      width:100%; 
-      font-size:1rem; 
-    }
+
+   .resume{
+      font-size: 1rem;
+      display: var(--main-display);
+      text-align: left;
+   }
+
+   .resume ul{
+      line-height: 2;
+   }
+  
 }

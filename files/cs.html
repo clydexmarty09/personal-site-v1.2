@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" media="screen">
     
-    <title> CS Mode </title>
+    <title> clydeXmarty:CS Mode </title>
    
 </head>
 
@@ -18,10 +18,10 @@
         </nav>
         <br> 
         Selected Fighter: <b>COMPUTER SCIENCE</b>
-        <img src="media/pixilart-drawing_1.png" alt="person"> 
 
     </header>
     <main>
+        <!--
         <aside>
             <fieldset>
                 <legend> MUSIC PLAYER </legend>
@@ -29,23 +29,25 @@
                 <pre>
                     356 | 8-Bit Chiptune Game Music by nickpanek620
                     Press <kbd> S </kbd> to skip song 
-                    <!-- custom tag below -->
+                   
                     <player-theme-toggle> </player-theme-toggle>
                 </pre>
             </fieldset>
-        </aside><hr><br>
+        </aside><hr><br> -->
 
+        <!--
         <details>
             <summary> MY <abbr title="Computer Science"> CS </abbr> BACKGROUND </summary>
             <p> This is my professional bio!</p>
             <picture> 
                 <img src="media/grad_pic_reduced.jpg" alt="grad_pic" width="300">
             </picture>
-        </details>
-        <hr>
-        <article> <h3> My Resume </h3>
-            <fieldset>
-                <legend> WORK EXPERIENCE </legend>
+        </details> -->
+       
+      
+        <article> 
+            <details class="resume"> 
+                <summary> MY PROFESSSIONAL BACKGROUND</summary>
                 <ul>
                     <li> Mathematics Tutor, <i> Step-Up Tutoring</i>, Spring 2024</li>
                     <li> Web Designer, <i> Inland Empire Immigrant Youth Collective</i>, 2021-2023</li>
@@ -54,68 +56,52 @@
                     <li> Phone Banker <i> US Census Beureau</i>, Summer 2020</li>
                     <li> Kitchen Helper <i> Ito Ay Atin Restaurant</i>, 2016-2020</li>
                 </ul>
-                <!-- Inser all work experience -->
-                <p> <strong> Education History </strong> </p>
+            </details>
+            <!-- Inser all work experience -->
+            <details class="resume">
+                <summary> EDUCATIONAL BACKGROUND</summary>
                 <ul>
                     <li> Bachelor's of Science: Mathematics-Computer Science, University of California, San Diego, 2025. </li>
                     <li> Associate's for Transfer: Mathematics, Mt. San Antonio College, 2023. </li>
                 </ul>
-                    <!-- Insert educational background-->
-                <dl>
-                    <dt> <b>Projects and Extracurriculars </b></dt>
-                    <dd> Festival <dfn title="Extracting information from the web using select libraries"> web scraper </dfn> - a barebones python program that uses the 
-                        <i> Beautiful Soup </i> (imported as <code> BeautifulSoup</code>)  library to gather information on upcoming EDM festivals. </dd>
-                    <dd> I am currently scraping this site: </dd> 
-                    <!-- Wesbsite does not load - most likely some security measure from their part :(-->
-                    <dd> <iframe src="https://www.nocturnalwonderland.com/" width="800" height="300"></iframe> </dd>
-                    
-                </dl>
-                    <!-- insert other stuff here -->
-            </fieldset>
+            </details>
+               
+            <!--
+            <dl>
+                <dt> <b>Projects and Extracurriculars </b></dt>
+                <dd> Festival <dfn title="Extracting information from the web using select libraries"> web scraper </dfn> - a barebones python program that uses the 
+                    <i> Beautiful Soup </i> (imported as <code> BeautifulSoup</code>)  library to gather information on upcoming EDM festivals. </dd>
+                <dd> I am currently scraping this site: </dd> 
+    
+                <dd> <iframe src="https://www.nocturnalwonderland.com/" width="800" height="300"></iframe> </dd>
+                
+            </dl>-->
+              
         </article>
-        <aside> 
-            <h3> Hello World console display </h3>
-            <hello-world></hello-world>
-
-            <script>
-            class HelloWorld extends HTMLElement {
-                connectedCallback() {
-                console.log("Hello world!");
-                }
-            }
-
-            customElements.define('hello-world', HelloWorld);
-            </script>
-
-        </aside>
-
-    </main>
+        
+    </main><hr>
     <footer>
-        <br>
-        <hr>
+        <p><strong>Contact information</strong> </p>
         <address>
-            <p> Contact information </p>
-            <p> <i> cmarty@ucsd.edu</i></p>
-            <p> <i> (123) 456-789 </i></p>
-            <p> Github: Username</p>
-            <span> 
-                <svg width="5" height="5"> 
-                    <rect x="1" y ="1" width="5" height=10 fill="red"> </rect> 
-                </svg>
-            </span>
-            <p> Linkedin: Username </p>
-            <!-- svg symbols are supposed to line up with the usernames -->
-            <span> 
-                <svg width="5" height="5"> 
-                    <rect x="1" y ="1" width="5" height=10 fill="red"> </rect> 
-                </svg>
-            </span>
-            <form action="/submit-url" method="post">
-                <label for="msg"> Send me a quick message: </label>
-                <input type="text" id="msg" name="message">
-                <button type="submit"> Send </button>
-            </form>
+            <p>  cmarty@ucsd.edu </p>
+            <p>  (123) 456-789 </p>
+            <p> <i>Github </p>
+            <p> Linkedin  </p>
         </address>
+        <!---
+        <section>
+            <h3> <strong> Citations </strong> </h3>
+            <dl>
+                <dt> <b> Media </b></dt>
+                <dd> <cite> 356 | 8-Bit Chiptune Game Music by <em> nickpanek620 </em>, pixabay.com </cite>  </dd>
+                <dd> <cite> Never Gonna Give You Up by Rick Astley short clip, voicy.network </cite></dd>
+                <dd> <cite> "The man," <em> Yok </em>, opengameart.org </cite> </dd>
+                <dd> <cite> Scimitar Sword Image <em>, AlexCons </em>, opengameart.org </cite> </dd>
+                <dd> <cite> Kite Shield Image <em>, LordNeo </em>, opengameart.org </cite> </dd>
+                <dd> <cite> "Serene Escape" <em>, bytecodeminer </em> alphacoders.com </cite></dd>
+                <dd> <em> All other artworks are mine </em></dd>
+            </dl>
+        </section> -->
     </footer>
 </body>
 </html>
