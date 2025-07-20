@@ -225,17 +225,29 @@ footer >p{
       font-size: 1.2rem;
       align-items: left; 
    }
-
+   /* Styles for cs.html below */
    .resume{
       padding-top:1.5rem; 
       font-size: 1rem;
       display: var(--main-display);
+      flex-direction: column;
       text-align: left;
+      padding:1rem; 
+      width:100%; 
+      border-radius: 1.5rem;
    }
 
    .resume ul{
       line-height: 2;
       align-items: left;
+      list-style-position: outside;
+      
+   }
+   .resume[open] ul {
+      
+      text-align: left; 
+      margin:0;  
+      padding-left:4rem; 
    }
 
    .cs_header {
@@ -256,4 +268,5 @@ footer >p{
       outline: solid white; 
       outline-offset: 4px;
    } 
+   /* -------------------------------------*/ 
 }
