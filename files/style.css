@@ -167,12 +167,12 @@ footer >p{
 /* Styles for cs.html below */
 /* Iphone displays */ 
 h2 {
-   font-size: 3rem;
+   font-size: 2rem;
    text-shadow:  2px 2px 0 black; 
 }
 .resume{
    padding-top:1.5rem; 
-   font-size: 1rem;
+   font-size: 1.5rem;
    display: var(--main-display);
    flex-direction: column;
    text-align: left;
