@@ -7,13 +7,26 @@
    --display-direction:column; 
    --main-height:100vh;
    --text-color:white;
-
+   --main-margin:0; 
+   --main-padding:0; 
+   --box-size: border-box; 
    --height: 100%;
    --width:100%;  
    --font-size: 16px; 
    --text-align:center; 
 }
-
+/* Media Queries */
+@media screen and (min-width:600px){
+   body {
+      font-size:18px; 
+   }
+}
+@media screen and (min-width:900px) {
+   body {
+      font-size:20px; 
+   }
+   
+}
 
 html{
    font-size:var(--font-size); 
@@ -88,8 +101,10 @@ details summary:hover{
 
  /* editing class fighter images */ 
 .fighter-img {
-   width: 150px;
-   height: 150px; 
+   width: 9rem;
+   height:9rem; 
+   max-width:150px ;
+   max-height: 150px; 
    object-fit: cover;
 }
 
@@ -102,6 +117,7 @@ figcaption {
 } 
 
 nav { 
+   flex-wrap: wrap;
    display: flex;
    justify-content: center;
    gap: 6rem;
