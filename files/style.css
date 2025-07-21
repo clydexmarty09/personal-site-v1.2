@@ -160,10 +160,17 @@ nav figure:hover, nav figure:focus-within {
 
 footer {
    color:var(--text-color); 
-   margin-top: 2rem;
-   margin-bottom: 4rem;
-  
- }
+   margin:1rem; 
+   padding:1rem; 
+   display: var(--main-display);
+   flex-direction: column;
+   text-align: center;
+}
+
+footer blockquote{
+   margin:0; 
+   padding:0; 
+}
 
 footer >p{
    text-decoration: underline;
@@ -401,8 +408,16 @@ h2 {
       outline: solid white; 
       outline-offset: 4px;
    }
-    
-   /* -------------------------------------*/ 
-   /* STYLES FOR art.html below */
+
+   footer {
+      color:var(--text-color); 
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+      display: var(--main-display);
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+   }
    
+    
 }
