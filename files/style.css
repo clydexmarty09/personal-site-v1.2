@@ -123,9 +123,7 @@ details summary:hover{
    padding:0; 
    text-align: center;
    width: 100%;
-   max-width: 90%;
-   word-wrap: break-word;
-   overflow-wrap: break-word;
+  
  }
 
  /* editing class fighter images */ 
