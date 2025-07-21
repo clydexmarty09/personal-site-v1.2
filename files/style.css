@@ -180,33 +180,36 @@ h2 {
    font-size: 1.5rem;
    text-shadow:  2px 2px 0 black; 
 }
-.resume{
+
+.subpage_details {
    padding-top:1.5rem; 
-   font-size: 1.2rem;
+   font-size: 1rem;
    display: var(--main-display);
    flex-direction: column;
    text-align: left;
    padding:1rem; 
    width:100%; 
    border-radius: 1.5rem;
+   /* Testing purposes below */ 
+   -color:red; 
 }
 
-.resume ul{
+.subpage_details ul{
    line-height: 2;
    align-items: left;
    list-style-position: outside;
    
 }
-.resume[open] ul {
+.subpage_details[open] ul {
    
    text-align: left; 
    margin:0;  
    padding-left:4rem; 
    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
-   font-size: 1rem;
+   font-size:0.9rem; 
 }
 
-.resume[open] summary {
+.subpage_details[open] summary {
    opacity: 50%;
  
 }
