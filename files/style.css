@@ -47,7 +47,7 @@ body {
    /* using css variables */ 
    display:var(--main-display); 
    flex-direction: var(--display-direction);
-   font-family: var(--family-font);
+   font-family: var(--family-font, monospace);
    margin:var(--main-margin);
    padding:var(--main-padding);
    min-height:var(--main-height);
@@ -176,9 +176,6 @@ footer >p{
    text-decoration: underline;
 
 }
-
-/* Styles for cs.html below */
-/* Iphone displays */ 
 h2 {
    font-size: 1.5rem;
    text-shadow:  2px 2px 0 black; 
@@ -213,14 +210,6 @@ h2 {
    opacity: 50%;
  
 }
-
-/* 
-.cs_header {
-   margin:1.5rem; 
-   padding:1.5rem; 
-   padding-bottom: 0;
-  
-} */ 
 
 .cs_nav{
    padding-bottom: 1.5rem;
@@ -260,6 +249,11 @@ h2 {
    width: 2rem;
    height: 2rem;
 }
+/* has() EXTRA CREDIT BELOW */ 
+details.subpage_details:not(:has(ul)) {
+   text-decoration: line-through;
+}
+
 /* -------------------------------------*/ 
 /* Media Queries */
 /* IPADS*/
@@ -349,6 +343,9 @@ h2 {
       transform: translateY(-3px);
       transform: scale(1.2);
       transition: transform 0.2s ease ;
+
+      /* wider-gamut color experiment*/
+      box-shadow:0 0 10px color(display-p3 0 1 1 1)
       
    }
    .main_nav a img.switch-char {
