@@ -117,11 +117,10 @@ details summary:hover{
    transform: translateY(-4px);
 }
  details[open] p {
-   margin-top: 2rem;
+   margin-top: 2rem 2rem;
    font-size: 1rem;
    text-align: justify;
    padding:0; 
-   text-align: center;
    width: 100%;
   
  }
