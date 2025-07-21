@@ -108,12 +108,16 @@ details {
    text-shadow: 1px 1px 0 black; 
 }
 
+details summary {
+   font-size: 1.3rem;
+}
+
 details summary:hover{
    transition:transform 0.2s ease;  
    transform: translateY(-4px);
 }
  details[open] p {
-   margin-top: 5rem;
+   margin-top: 2rem;
    font-size: 1rem;
  }
 
