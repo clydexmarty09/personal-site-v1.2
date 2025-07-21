@@ -117,13 +117,12 @@ details summary:hover{
    transform: translateY(-4px);
 }
  details[open] p {
-   margin: 2rem 2rem;
-   padding:1rem 1rem; 
-   font-size: 1rem;
-   text-align: justify;
+   margin: 1rem auto; 
    padding:0; 
-   width: 100%;
-  
+   font-size: 1rem;
+   max-width: 70ch;
+   text-align: justify;
+   line-height: 1.5;
  }
 
  /* editing class fighter images */ 
@@ -186,10 +185,7 @@ footer blockquote{
    padding:0; 
 }
 
-footer >p{
-   text-decoration: underline;
 
-}
 h2 {
    font-size: 1.5rem;
    text-shadow:  2px 2px 0 black; 
