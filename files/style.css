@@ -37,6 +37,10 @@ header {
    width:var(--width); 
    flex-direction: var(--display-direction); 
    -overflow-x: hidden;
+
+   margin:1.5rem 1.5rem; 
+   padding:1rem 1rem; 
+
 }
 body {
     
@@ -202,12 +206,14 @@ h2 {
  
 }
 
+/* 
 .cs_header {
    margin:1.5rem; 
    padding:1.5rem; 
    padding-bottom: 0;
   
-}
+} */ 
+
 .cs_nav{
    padding-bottom: 1.5rem;
 }
@@ -222,8 +228,6 @@ h2 {
 }
 
 .main_nav {
-   margin:1rem 1rem 1rem 1rem; 
-   padding:1rem 1rem 1rem 1rem; 
    display: var(--main-display);
    flex-direction: row;
 }
@@ -272,6 +276,10 @@ h2 {
       margin:0; 
       padding:0; 
    }
+   header {
+      margin: 1rem 1rem; 
+      padding: 1rem 1rem; 
+   }
    h1 {
       
       font-size:4rem; 
@@ -314,7 +322,7 @@ h2 {
 
    .main_nav {
      
-      border: solid white;
+   
       display: var(--main-display);
       flex-direction: row;
    }
@@ -379,12 +387,7 @@ h2 {
     
    }
 
-   .subpage_header {
-      margin:1.5rem; 
-      padding:1.5rem; 
-      padding-bottom: 0;
-     
-   }
+   
    .subpage_nav{
       padding-bottom: 1.5rem;
    }
