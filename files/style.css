@@ -148,6 +148,7 @@ nav a img {
 nav figure:hover, nav figure:focus-within {
    
    transform:translateY(-6px);
+   transform: scale(1.1);
 }
 
 
@@ -289,9 +290,22 @@ h2 {
       display: var(--main-display);
       flex-direction: row;
    }
+
+   .main_nav a {
+      gap: 2rem; 
+     
+   }
    .main_nav a img {
-      height: 2rem;
-      width:2rem; 
+      height: 2.3rem;
+      width:2.3rem; 
+      outline: none;
+      
+   }
+   .main_nav a img:hover {
+      transform: translateY(-3px);
+      transform: scale(1.2);
+      transition: transform 0.2s ease ;
+      
    }
    /* Styles for cs.html below */
    h2 {
