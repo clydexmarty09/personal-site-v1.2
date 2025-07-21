@@ -219,7 +219,35 @@ h2 {
    object-fit: cover;
    outline: solid white; 
    outline-offset: 2px;
+}
+
+.main_nav {
+   margin:1rem 1rem 1rem 1rem; 
+   padding:1rem 1rem 1rem 1rem; 
+   display: var(--main-display);
+   flex-direction: row;
+}
+
+.main_nav a {
+   gap: 2rem; 
+  
+}
+.main_nav a img {
+   height: 2.3rem;
+   width:2.3rem; 
+   outline: none;
+   
+}
+.main_nav a img:hover {
+   transform: translateY(-3px);
+   transform: scale(1.2);
+   transition: transform 0.2s ease ;
+   
 } 
+.switch-char {
+   width: 2rem;
+   height: 2rem;
+}
 /* -------------------------------------*/ 
 /* Media Queries */
 /* IPADS*/
@@ -285,8 +313,8 @@ h2 {
    }
 
    .main_nav {
-      margin:1rem 1rem 1rem 1rem; 
-      padding:1rem 1rem 1rem 1rem; 
+     
+      border: solid white;
       display: var(--main-display);
       flex-direction: row;
    }
@@ -306,6 +334,12 @@ h2 {
       transform: scale(1.2);
       transition: transform 0.2s ease ;
       
+   }
+   .main_nav a img.switch-char {
+      width: 4.5rem;
+      height: 2.5rem;
+      outline: none; 
+      border: none;
    }
    /* Styles for cs.html below */
    h2 {
