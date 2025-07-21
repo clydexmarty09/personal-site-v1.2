@@ -278,10 +278,10 @@ details.subpage_details:not(:has(ul)) {
 /* IPADS*/
 @media screen and (min-width:600px){
    body {
-      font-size:18px; 
+      font-size:1rem; 
    }
    h1{
-      font-size:1rem; 
+      font-size:5rem; 
       padding:1rem; 
    }
   
