@@ -134,7 +134,7 @@ nav {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   gap: 3rem;
+   gap: 2rem;
    transition:transform 0.2s ease; 
  
 }
@@ -327,6 +327,7 @@ details.subpage_details:not(:has(ul)) {
    
       display: var(--main-display);
       flex-direction: row;
+      align-items: center;
    }
 
    .main_nav a {
@@ -353,6 +354,14 @@ details.subpage_details:not(:has(ul)) {
       height: 2.5rem;
       outline: none; 
       border: none;
+   }
+
+   .char_nav {
+      display: var(--main-display);
+      flex-direction: row;
+      align-items: center;
+      text-align: justify;
+      gap:2rem; 
    }
    /* Styles for cs.html below */
    h2 {
