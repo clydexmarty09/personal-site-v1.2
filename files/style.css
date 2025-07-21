@@ -104,7 +104,7 @@ h2 {
 details {
    
    padding: 4rem; 
-   font-size: 1.5rem;
+   -font-size: 1.5rem;
    text-shadow: 1px 1px 0 black; 
 }
 
@@ -120,6 +120,12 @@ details summary:hover{
    margin-top: 2rem;
    font-size: 1rem;
    text-align: justify;
+   padding:0; 
+   text-align: center;
+   width: 100%;
+   max-width: 90%;
+   word-wrap: break-word;
+   overflow-wrap: break-word;
  }
 
  /* editing class fighter images */ 
