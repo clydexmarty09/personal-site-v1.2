@@ -50,7 +50,7 @@ body {
    color:var(--text-color);
    box-sizing: var(--box-size);
    
-   background-image: url(media/css_bg/bg_final_compress.jpg);
+   background-image: url(media/css_bg/bg_final_compress.webp);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -281,6 +281,17 @@ h2 {
    details[open] p{
       font-size: 1.2rem;
       align-items: left; 
+   }
+
+   .main_nav {
+      margin:1rem 1rem 1rem 1rem; 
+      padding:1rem 1rem 1rem 1rem; 
+      display: var(--main-display);
+      flex-direction: row;
+   }
+   .main_nav a img {
+      height: 2rem;
+      width:2rem; 
    }
    /* Styles for cs.html below */
    h2 {
