@@ -97,6 +97,9 @@ nav figure:hover:active {
    animation: h1Slide 0.6s ease forwards; 
    font-family: var(--signature-font);
 }
+h2 {
+   font-size:1rem; 
+}
 
 details {
    
