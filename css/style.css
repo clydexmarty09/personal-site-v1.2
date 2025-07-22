@@ -438,6 +438,20 @@ details.subpage_details:not(:has(ul)) {
       text-align: left;
    }
 
+   @keyframes form-fall {
+
+      from{
+         opacity: 0;
+         transform: translateY(-50px);
+      }
+
+      to {
+         opacity: 1;
+         transform: translateY(0);
+      }
+      
+   }
+
    /* form.html edits*/
    .form-head {
       font-family: var(--family-font);
@@ -457,6 +471,7 @@ details.subpage_details:not(:has(ul)) {
       padding:2rem auto; 
       outline: solid black; 
       xbox-shadow: 0px 4px 8px rgb(0,0,0, 1);
+      width:var(--width); 
       
    }
 
@@ -470,8 +485,32 @@ details.subpage_details:not(:has(ul)) {
       font-size: 1rem;
       letter-spacing: 0.5rem;
       font-weight: bold;
+      animation: form-fall 4s ease forwards;
+   }
+   label {
+      color: white; 
+      font-size: 1.1rem;
+      letter-spacing: 0.5rem ;
+      text-shadow: var(--color-shadow); 
    }
 
-   
+   #name-id {
+      animation: form-fall 1s ease forwards;
+   }
+   #name{
+      animation: form-fall 1.5s ease forwards;
+   }
+   #email-id {
+      animation: form-fall 2s ease forwards;
+   }
+   #email{
+      animation: form-fall 2.5s ease forwards;
+   }
+   #msg-id{
+      animation: form-fall 3s ease forwards;
+   }
+   #msg {
+      animation: form-fall 3.5s ease forwards;
+   }
     
 }
