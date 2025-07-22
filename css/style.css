@@ -266,6 +266,21 @@ details.subpage_details:not(:has(ul)) {
    figcaption {
       font-size:1rem; 
    }
+
+   nav {
+      display: var(--main-display);
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap:1rem; 
+   }
+
+   .main_nav {
+      display: var(--main-display);
+      flex-direction: row;
+      gap: 4rem;
+   }
 }
 /* LARGE screens */
 @media screen and (min-width:900px) {
