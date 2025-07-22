@@ -1,21 +1,6 @@
-/* root elements here*/
-/* Assets are optimized for a mobile first design*/
-:root {
-   --family-font: "Share Tech Mono", monospace; 
-   --signature-font:"Brush Script MT", cursive; 
-   --layout:flex; 
-   --main-display:flex; 
-   --display-direction:column; 
-   --main-height:100dvh;
-   --text-color:white;
-   --main-margin:0; 
-   --main-padding:0; 
-   --box-size: border-box; 
-   --height: 100%;
-   --width:100%;  
-   --font-size: 16px; 
-   --text-align:center; 
-}
+/* style.css */ 
+
+@import "vars.css";
 
 html{
    font-size:var(--font-size); 
@@ -54,7 +39,7 @@ body {
    color:var(--text-color);
    box-sizing: var(--box-size);
    
-   background-image: url(media/css_bg/bg_final_compress.webp);
+   background-image: url(../assets/backgorunds/bg_final_compress.webp);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
