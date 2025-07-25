@@ -40,6 +40,22 @@
         <output id="info-msg">  </output>
     </form>
 
+    <script>
+
+        const name = document.getElementById("name-id");
+        const email = document.getElementById("email-id"); 
+        const message = document.getElementById("msg-id");  
+
+        email.addEventListener("input", (event) => {
+            if(email.validity.typeMismatch) {
+                email.setCustomValidity("I am expecting an email address!"); 
+            } else {
+                email.setCustomValidity(""); 
+          }
+        }); 
+
+    </script>
+
     <hr> 
     <footer>
         <aside>
