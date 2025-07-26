@@ -46,7 +46,19 @@
         const email = document.getElementById("email"); 
         const message = document.getElementById("message");  
 
-        email.addEventListener("input", (event) => {
+        // validate the name 
+        name.addEventListener("input", ()=> {
+            const og_name = name.value; 
+            const corrected_name = og_name.replace(/[^A-Za-z\s\-]/g,"");
+
+            if(og_name !== corrected_name) {
+               name.value = corrected_name; 
+            }
+        }); 
+
+
+
+        email.addEventListener("input", (e) => {
             if(email.validity.typeMismatch) {
                 email.setCustomValidity("I am expecting an email address!"); 
             } else {

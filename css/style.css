@@ -512,5 +512,5 @@ details.subpage_details:not(:has(ul)) {
    #msg {
       animation: form-fall 3.5s ease forwards;
    }
-    
+   
 }
