@@ -22,14 +22,14 @@
 
     <form method="POST" action="https://httpbin.org/post" class = "form"> 
 
-        <label for="name" id="name"> NAME: </label>
-        <input type="text" name="name" id="name" required>
+        <label for="name-input" id="name-label"> NAME: </label>
+        <input type="text" name="name" id="name-input" required>
 
-        <label for="email" id="email"> EMAIL: </label>
-        <input type="text" name="email" id="email" required>
+        <label for="email-input" id="email-label"> EMAIL: </label>
+        <input type="text" name="email" id="email-input" required>
 
-        <label for ="message" id="message"> MESSAGE:</label>
-        <textarea name ="msg" rows="6" cols="40" required id="msg" minlength="2" maxlength="200">  </textarea>
+        <label for ="msg-input" id="message"> MESSAGE:</label>
+        <textarea name ="msg" rows="6" cols="40" required id="msg-input" minlength="2" maxlength="200">  </textarea>
 
         <input type="hidden" name="possible_bot" value="true">
 
@@ -42,18 +42,22 @@
 
     <script>
 
-        const name = document.getElementById("name");
-        const email = document.getElementById("email"); 
+        const name = document.getElementById("name-input");
+        const email = document.getElementById("email-input"); 
         const message = document.getElementById("message");  
 
         // validate the name 
         name.addEventListener("input", ()=> {
             const og_name = name.value; 
-            const corrected_name = og_name.replace(/[^A-Za-z\s\-]/g,"");
+            const corrected_name = og_name.replace(/[^A-Za-z\s\-]/g,""); //replace bad input with space
 
             if(og_name !== corrected_name) {
                name.value = corrected_name; 
+               name.classList.add("input-err"); 
+            } else {
+                name.classList.remove("input-err"); 
             }
+          
         }); 
 
 
