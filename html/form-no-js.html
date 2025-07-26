@@ -22,13 +22,13 @@
 
     <form method="POST" action="https://httpbin.org/post" class = "form"> 
 
-        <label for="name" id="name-id"> NAME: </label>
+        <label for="name" id="name"> NAME: </label>
         <input type="text" name="name" id="name" required>
 
-        <label for="email" id="email-id"> EMAIL: </label>
+        <label for="email" id="email"> EMAIL: </label>
         <input type="text" name="email" id="email" required>
 
-        <label for ="message" id="msg-id"> MESSAGE:</label>
+        <label for ="message" id="message"> MESSAGE:</label>
         <textarea name ="msg" rows="6" cols="40" required id="msg" minlength="2" maxlength="200">  </textarea>
 
         <input type="hidden" name="possible_bot" value="true">
@@ -42,9 +42,9 @@
 
     <script>
 
-        const name = document.getElementById("name-id");
-        const email = document.getElementById("email-id"); 
-        const message = document.getElementById("msg-id");  
+        const name = document.getElementById("name");
+        const email = document.getElementById("email"); 
+        const message = document.getElementById("message");  
 
         email.addEventListener("input", (event) => {
             if(email.validity.typeMismatch) {
