@@ -50,7 +50,7 @@
         // validate the name 
         name.addEventListener("input", ()=> {
             const og_name = name.value; 
-            const corrected_name = og_name.replace(/[^A-Za-z\s\-]/g,""); //replace bad input with space
+            const corrected_name = og_name.replace(/[^A-Za-z0-9\s\-]/g,""); //replace bad input with space
 
             if(og_name !== corrected_name) {
                name.value = corrected_name; 
@@ -59,9 +59,22 @@
                
             } else {
                 name.classList.remove("input-err"); 
-                err.textContent = ""; 
+                err.textContent = "";  // fix this so it fades after a period of time 
+                //console.log(name.classList); 
             }
           
+        });
+        
+        email.addEventListener("input", ()=> {
+        
+            const email_in = email.value; 
+            if(!email_in.includes("@")) {
+                email.classList.add("input-err"); 
+                err.textContent = "Please include a valid email address :("
+            } else {
+                err.textContent = "";
+                email.classList.remove("input-err");  
+            }
         }); 
 
 
