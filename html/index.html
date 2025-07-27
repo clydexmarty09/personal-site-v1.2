@@ -22,6 +22,19 @@
     <!-- <audio src="sounds/8-bit-menu.mp3" autoplay loop ></audio> -->
     <header>
            <!-- top navigation -->
+        <button type="button" class="theme-switch-button" id="theme"> 
+            <img src="../assets/top_navigation_images/sun-symbol-compressed.webp" alt="night-mode">    
+        </button>   
+
+        <script> 
+            const btn = document.getElementById("theme"); 
+            btn.addEventListener("click", () => {
+                alert("☀️ Sun clicked!");
+            });
+        </script>
+
+
+
         <nav class="main_nav">
             <a href="index.html"> 
                 <img src="../assets/top_navigation_images/home_compressed.webp" alt="Homepage" title="Homepage">

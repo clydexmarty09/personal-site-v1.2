@@ -8,6 +8,7 @@
     --display-direction:column; 
     --main-height:100dvh;
     --text-color:white;
+    --secondary-color: rgb(244, 244, 158); 
     --main-margin:0; 
     --main-padding:0; 
     --box-size: border-box; 
