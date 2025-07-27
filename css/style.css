@@ -36,16 +36,20 @@ body {
    margin:var(--main-margin);
    padding:var(--main-padding);
    min-height:var(--main-height);
-   color:var(--secondary-color);
+   color:var(--text-color);
    box-sizing: var(--box-size);
    
-   background-image: url(../assets/backgorunds/blurred_night_mode.webp);
+   background-image: url(../assets/backgorunds/bg_final_compress.webp);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
    background-attachment: fixed;
    align-items: center;
-    
+ }
+
+ .dark-theme {
+   background-image: url(../assets/backgorunds/blurred_night_mode.webp);
+   color:var(--secondary-color);
  }
  
  aside {

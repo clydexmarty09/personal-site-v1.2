@@ -28,9 +28,18 @@
 
         <script> 
             const btn = document.getElementById("theme"); 
+            const body = document.body; 
+            const dark_theme = localStorage.getItem("dark-theme"); 
+
             btn.addEventListener("click", () => {
-                alert("☀️ Sun clicked!");
+                body.classList.add("dark-theme"); 
+                localStorage.setItem("theme", "dark-theme");
+
+                if(body.classList.contains("dark-theme")) {
+                    localStorage.removeItem("dark-theme"); 
+                }
             });
+
         </script>
 
 
@@ -88,6 +97,7 @@
             <p> <strong> Citations </strong> </p>
             <ol>
                 <li> <cite>&copy; Background Image: "Serene Escape," <em> bytecodeminer, </em> alphacoders.com </cite></li>
+                <li> <cite> &copy; Dark Mode Background: "Crescent Moon and Stars Wallpaper," <em> Laxmonaut, </em> alphacoders.com</cite></li>
                 <li> <em> &copy; All other artworks are mine </em></dd>
             </ol>
         </aside>
