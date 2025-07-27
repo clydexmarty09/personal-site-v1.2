@@ -65,7 +65,7 @@
           
         });
         
-        email.addEventListener("input", ()=> {
+        email.addEventListener("input", (e)=> {
         
             const email_in = email.value; 
             if(!email_in.includes("@")) {
@@ -76,8 +76,6 @@
                 email.classList.remove("input-err");  
             }
         }); 
-
-
 
         email.addEventListener("input", (e) => {
             if(email.validity.typeMismatch) {
