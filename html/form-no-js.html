@@ -45,6 +45,7 @@
         const name = document.getElementById("name-input");
         const email = document.getElementById("email-input"); 
         const message = document.getElementById("message");  
+        const err = document.getElementById("error-msg")
 
         // validate the name 
         name.addEventListener("input", ()=> {
@@ -54,8 +55,11 @@
             if(og_name !== corrected_name) {
                name.value = corrected_name; 
                name.classList.add("input-err"); 
+               err.textContent = "Invalid Input!"; 
+               
             } else {
                 name.classList.remove("input-err"); 
+                err.textContent = ""; 
             }
           
         }); 
