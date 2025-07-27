@@ -34,11 +34,11 @@
         <input type="hidden" name="possible_bot" value="true">
 
         <button type ="submit"> SEND </button>       
-        
-        <!-- adding <output> tags -->
-        <output id="error-msg"> </output>
-        <output id="info-msg">  </output>
-    </form>
+       
+    </form> 
+    <!-- adding <output> tags -->
+    <output id="error-msg"> </output>
+    <output id="info-msg">  </output>
 
     <script>
 
@@ -55,7 +55,7 @@
             if(og_name !== corrected_name) {
                name.value = corrected_name; 
                name.classList.add("input-err"); 
-               err.textContent = "Invalid Input!"; 
+               err.textContent = "Your name seriously has numbers or symbols in it? No way"; 
                
             } else {
                 name.classList.remove("input-err"); 
