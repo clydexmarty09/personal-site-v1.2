@@ -17,7 +17,7 @@
 <body>
  
     <noscript> 
-        <p><strong> Javascript is disabled! </strong></p>
+        <p><strong> Javascript is required for theme toggling! </strong></p>
     </noscript>
     <!-- <audio src="sounds/8-bit-menu.mp3" autoplay loop ></audio> -->
     <header>
@@ -27,18 +27,21 @@
         </button>   
 
         <script> 
-            const btn = document.getElementById("theme"); 
-            const body = document.body; 
-            const dark_theme = localStorage.getItem("dark-theme"); 
-
-            btn.addEventListener("click", () => {
-                body.classList.add("dark-theme"); 
-                localStorage.setItem("theme", "dark-theme");
-
-                if(body.classList.contains("dark-theme")) {
-                    localStorage.removeItem("dark-theme"); 
+            
+            function toggleTheme() {
+                document.body.classList.toggle("dark-theme"); 
+                if(document.body.classList.contains("dark-theme")) {
+                    localStorage.setItem("theme", "dark-theme"); 
+                } else {
+                    localStorage.removeItem("theme"); 
                 }
-            });
+            }
+
+            const btn = document.getElementById("theme"); 
+            btn.addEventListener("click", toggleTheme);
+            if(localStorage.getItem("theme")==="dark-theme") {
+                document.body.classList.add("dark-theme"); 
+            } 
 
         </script>
 
