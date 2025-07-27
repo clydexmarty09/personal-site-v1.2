@@ -29,7 +29,7 @@
         <input type="text" name="email" id="email-input" required>
 
         <label for ="msg-input" id="message"> MESSAGE:</label>
-        <textarea name ="msg" rows="6" cols="40" required id="msg-input" minlength="2" maxlength="200">  </textarea>
+        <textarea name ="msg" rows="6" cols="40" required id="msg-input" minlength="1" maxlength="200">  </textarea>
 
         <input type="hidden" name="possible_bot" value="true">
 
@@ -44,8 +44,11 @@
 
         const name = document.getElementById("name-input");
         const email = document.getElementById("email-input"); 
-        const message = document.getElementById("message");  
+        const message = document.getElementById("msg-input");  
         const err = document.getElementById("error-msg")
+        const info = document.getElementById("info-msg"); 
+
+        let form_errors = []; 
 
         // validate the name 
         name.addEventListener("input", ()=> {
@@ -64,25 +67,32 @@
             }
           
         });
-        
-        email.addEventListener("input", (e)=> {
-        
+      
+        email.addEventListener("input", (e) => {
             const email_in = email.value; 
             if(!email_in.includes("@")) {
-                email.classList.add("input-err"); 
-                err.textContent = "Please include a valid email address :("
+                email.setCustomValidity("I am expecting an email address!");
+                email.classList.add("input-err");  
             } else {
-                err.textContent = "";
-                email.classList.remove("input-err");  
-            }
+                email.setCustomValidity("");
+                email.classList.remove("input-err");   
+          }
         }); 
 
-        email.addEventListener("input", (e) => {
-            if(email.validity.typeMismatch) {
-                email.setCustomValidity("I am expecting an email address!"); 
+        message.addEventListener("input", (e) => {
+            const max_counter = message.maxLength; // set to 200
+            let current_count = message.value.length; 
+            const rem = max_counter-current_count; 
+            
+            info.textContent = `${rem} characters remaining`; 
+            if(rem <= (max_counter-10)) {
+                info.textContent = `${rem} characters remaining. Warning!`;
+                message.classList.add("input-err"); 
             } else {
-                email.setCustomValidity(""); 
-          }
+                info.textContent = `${rem} characters remaining`;
+                message.classList.remove("input-err");  
+            }
+            
         }); 
 
     </script>
