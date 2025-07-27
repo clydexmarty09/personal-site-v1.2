@@ -82,10 +82,10 @@
         message.addEventListener("input", (e) => {
             const max_counter = message.maxLength; // set to 200
             let current_count = message.value.length; 
-            const rem = max_counter-current_count; 
+            let rem = max_counter-current_count; 
             
             info.textContent = `${rem} characters remaining`; 
-            if(rem <= (max_counter-10)) {
+            if(rem <= 10){
                 info.textContent = `${rem} characters remaining. Warning!`;
                 message.classList.add("input-err"); 
             } else {
