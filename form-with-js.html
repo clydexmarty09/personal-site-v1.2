@@ -85,6 +85,10 @@
                name.classList.add("input-err"); 
                err.textContent = "Your name seriously has numbers or symbols in it? No way bro";
                err_count+=1;  
+               form_errors.push({
+                    field:"name", 
+                    message:"Invalid name"
+               }); 
                
             } else {
                 name.classList.remove("input-err"); 
@@ -99,7 +103,12 @@
             if(!email_in.includes("@")) {
                 email.setCustomValidity("I am expecting an email address!");
                 email.classList.add("input-err"); 
-                err_count+=1; 
+                err_count+=1;
+                form_errors.push({
+                    field:"email", 
+                    message:"Email must contain @ symbol"
+               });  
+
 
             } else {
                 email.setCustomValidity("");
@@ -119,6 +128,13 @@
             } else {
                 info.textContent = `${rem} characters remaining`;
                 message.classList.remove("input-err");  
+            }
+
+            if(rem <0 ) {
+                form_errors.push({
+                    field:"message", 
+                    message:"Exceeded character limit"
+               }); 
             }
             
         }); 
