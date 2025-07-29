@@ -3,6 +3,7 @@
 /* Fall theme */
 .city-theme {
 
+    background-image: url(../assets/backgorunds/Untitled\ Project.jpg);
     font-family: 'Marker Felt', fantasy;
     color: cyan; 
 
@@ -12,8 +13,14 @@
 
 .winter-theme {
 
-
+    background-image: url(../assets/backgorunds/winter-theme.webp);
     font-family: 'American Typewriter', serif;
     color: darkred; 
 
+}
+
+
+.dark-theme {
+    background-image: url(../assets/backgorunds/blurred_night_mode.webp);
+    color:var(--secondary-color);
 }

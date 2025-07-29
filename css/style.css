@@ -1,6 +1,7 @@
 /* style.css */ 
 
 @import "vars.css";
+@import "themes.css"; 
 
 html{
    font-size:var(--font-size); 
@@ -47,11 +48,6 @@ body {
    align-items: center;
  }
 
- .dark-theme {
-   background-image: url(../assets/backgorunds/blurred_night_mode.webp);
-   color:var(--secondary-color);
- }
- 
  aside {
    text-align:left; 
    opacity: 50%; 
@@ -345,6 +341,7 @@ details.subpage_details:not(:has(ul)) {
       display: var(--main-display);
       flex-direction: row;
       align-items: center;
+      padding-top: 1rem;
    }
 
    .main_nav a {
@@ -546,25 +543,27 @@ details.subpage_details:not(:has(ul)) {
       font-size: 1.2rem;
    }
 
-   /*Code below is for theme button*/ß
+   /*Code below is for theme button*/
    .theme-switch {
       
       
       display: flex;
-      gap: 5rem; 
+      gap: 4rem; 
+      flex-direction: row;
       align-items: center;
-      visibility: hidden;
-     
-
+      justify-content: center;
+      margin: 0 auto;
    }
    .theme-switch-button {
       background: none;
       border: hidden;
-      align-items: left;
+      flex-direction: row;
+      display: flex;
+      align-items: center;
       margin:0;
       padding: 0;
-      width:5%; 
-      height:auto; 
+      xwidth:5%; 
+      xheight:auto; 
       
    }
    .theme-switch-button img {
