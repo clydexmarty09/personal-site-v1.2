@@ -6,9 +6,11 @@
     background-image: url(../assets/backgorunds/Untitled\ Project.jpg);
     font-family: 'Marker Felt', fantasy;
     color: cyan; 
+}
 
-
-
+.city-theme hgroup h1{
+    
+    font-family: Impact, fantasy;
 }
 
 .winter-theme {
@@ -19,10 +21,19 @@
 
 }
 
+.winter-theme hgroup h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 
 .dark-theme {
     background-image: url(../assets/backgorunds/blurred_night_mode.webp);
     color:var(--secondary-color);
+    font-family: Apple Chancery, cursive; 
+}
+
+.dark-theme hgroup h1 {
+    font-family: Bradley Hand, cursive ;
 }
 
 .day-theme { /*This was the primary theme */ 
