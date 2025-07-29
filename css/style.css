@@ -546,7 +546,17 @@ details.subpage_details:not(:has(ul)) {
       font-size: 1.2rem;
    }
 
-   /*Code below is for theme button*/
+   /*Code below is for theme button*/ß
+   .theme-switch {
+      
+      
+      display: flex;
+      gap: 5rem; 
+      align-items: center;
+      visibility: hidden;
+     
+
+   }
    .theme-switch-button {
       background: none;
       border: hidden;
@@ -555,6 +565,7 @@ details.subpage_details:not(:has(ul)) {
       padding: 0;
       width:5%; 
       height:auto; 
+      
    }
    .theme-switch-button img {
       width: 2.1rem;
