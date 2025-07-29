@@ -71,6 +71,8 @@
         const message = document.getElementById("msg-input");  
         const err = document.getElementById("error-msg")
         const info = document.getElementById("info-msg"); 
+        const form = document.querySelector(".form"); 
+        const hidden = document.createElement("input"); 
 
         let form_errors = []; 
         let err_count = 0; 
@@ -135,9 +137,16 @@
                     field:"message", 
                     message:"Exceeded character limit"
                }); 
-            }
-            
+            } 
         }); 
+        form.addEventListener("submit", (e) => {
+
+            hidden.type="hidden"; 
+            hidden.name="form-errors"; 
+            hidden.value=JSON.stringify(form_errors); 
+            form.appendChild(hidden);
+
+        });
 
     </script>
 
