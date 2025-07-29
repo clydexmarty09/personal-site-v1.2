@@ -11,26 +11,48 @@
 <body>
 
     <header>
-        <button type="button" class="theme-switch-button" id="theme"> 
-            <img src="/assets/top_navigation_images/sun-symbol-compressed.webp" alt="night-mode">    
-        </button>   
+        <div class="theme-switch"> 
+            <button type="button" class="theme-switch-button" data-theme="dark-theme">
+                <img src="/assets/top_navigation_images/dark-theme-toggle.webp" alt="night-theme"> 
+            </button>
+            <button type="button" class="theme-switch-button" data-theme="city-theme">
+                <img src="/assets/top_navigation_images/city-toggle.webp" alt="city-theme"> 
+            </button>
+            <button type="button" class="theme-switch-button" data-theme="day-theme">
+                <img src="/assets/top_navigation_images/sun-symbol-compressed.webp" alt="day-theme"> 
+            </button>
+            <button type="button" class="theme-switch-button" data-theme="winter-theme">
+                <img src="/assets/top_navigation_images/winter-toggle.webp" alt="winter-theme"> 
+            </button>
+        </div>   
 
         <script> 
             
-            function toggleTheme() {
-                document.body.classList.toggle("dark-theme"); 
-                if(document.body.classList.contains("dark-theme")) {
-                    localStorage.setItem("theme", "dark-theme"); 
+            const themes=["dark-theme", "day-theme", "winter-theme","city-theme"];
+            const buttons = document.querySelectorAll(".theme-switch-button"); 
+            const body = document.body; 
+            
+            function applyTheme(theme) {
+                body.classList.remove(...themes);   // remove all themes 
+
+                if(themes.includes(theme)) {
+                    body.classList.add(theme); 
+                    localStorage.setItem("theme", theme); 
                 } else {
                     localStorage.removeItem("theme"); 
                 }
             }
 
-            const btn = document.getElementById("theme"); 
-            btn.addEventListener("click", toggleTheme);
-            if(localStorage.getItem("theme")==="dark-theme") {
-                document.body.classList.add("dark-theme"); 
-            } 
+            buttons.forEach(btn=>{
+                btn.addEventListener("click", ()=> {
+                    applyTheme(btn.dataset.theme);
+                });
+            }); 
+
+            const recent = localStorage.getItem("theme"); 
+            if(recent) {
+                applyTheme(recent); 
+            }
 
         </script>
              <!-- top navigation -->
