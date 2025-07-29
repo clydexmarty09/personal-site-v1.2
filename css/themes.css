@@ -24,3 +24,9 @@
     background-image: url(../assets/backgorunds/blurred_night_mode.webp);
     color:var(--secondary-color);
 }
+
+.day-theme { /*This was the primary theme */ 
+
+    background-image: url(../assets/backgorunds/bg_final_compress.webp);
+    color:var(--text-color);
+}

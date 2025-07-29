@@ -40,7 +40,7 @@ body {
    color:var(--text-color);
    box-sizing: var(--box-size);
    
-   background-image: url(../assets/backgorunds/bg_final_compress.webp);
+   xbackground-image: url(../assets/backgorunds/bg_final_compress.webp);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;

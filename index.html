@@ -22,16 +22,16 @@
     <!-- <audio src="sounds/8-bit-menu.mp3" autoplay loop ></audio> -->
     <header>
         <div class="theme-switch"> 
-            <button type="button" class="theme-switch-button">
-                <img src="" alt="night-theme"> 
+            <button type="button" class="theme-switch-button" data-theme="dark-theme">
+                <img src="assets/top_navigation_images/sun-symbol-compressed.webp" alt="night-theme"> 
             </button>
-            <button type="button" class="theme-switch-button">
+            <button type="button" class="theme-switch-button" data-theme="city-theme">
                 <img src="" alt="city-theme"> 
             </button>
-            <button type="button" class="theme-switch-button">
+            <button type="button" class="theme-switch-button" data-theme="day-theme">
                 <img src="/assets/top_navigation_images/sun-symbol-compressed.webp" alt="day-theme"> 
             </button>
-            <button type="button" class="theme-switch-button">
+            <button type="button" class="theme-switch-button" data-theme="winter-theme">
                 <img src="" alt="winter-theme"> 
             </button>
         </div>
@@ -56,23 +56,23 @@
             if(localStorage.getItem("theme")==="dark-theme") {
                 document.body.classList.add("dark-theme"); 
             } */ 
-            const themes=["dark-theme", "night-theme", "winter-theme","city-theme"];
+            const themes=["dark-theme", "day-theme", "winter-theme","city-theme"];
             const buttons = document.querySelectorAll(".theme-switch-button"); 
             const body = document.body; 
             
             function applyTheme(theme) {
                 body.classList.remove(...themes);   // remove all themes 
 
-                if(themes.include(theme)) {
+                if(themes.includes(theme)) {
                     body.classList.add(theme); 
                     localStorage.setItem("theme", theme); 
                 } else {
-                    localStorage.removeItem("item"); 
+                    localStorage.removeItem("theme"); 
                 }
             }
 
             buttons.forEach(btn=>{
-                btn.addEventsListener("click", ()=> {
+                btn.addEventListener("click", ()=> {
                     applyTheme(btn.dataset.theme);
                 });
             }); 
