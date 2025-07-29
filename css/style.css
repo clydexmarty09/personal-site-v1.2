@@ -22,7 +22,7 @@ header {
    display: var(--main-display);
    width:var(--width); 
    flex-direction: var(--display-direction); 
-   -overflow-x: hidden;
+  
 
    margin:1.5rem 1.5rem; 
    padding:1rem 1rem; 
@@ -39,8 +39,6 @@ body {
    min-height:var(--main-height);
    color:var(--text-color);
    box-sizing: var(--box-size);
-   
-   xbackground-image: url(../assets/backgorunds/bg_final_compress.webp);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -199,8 +197,7 @@ h2 {
    padding:1rem; 
    width:100%; 
    border-radius: 1.5rem;
-   /* Testing purposes below */ 
-   -color:red; 
+  
 }
 
 .subpage_details ul{
@@ -282,15 +279,13 @@ details.subpage_details:not(:has(ul)) {
 }
 
 input, textarea {
-   xvisibility: hidden;
+  
    margin: 1rem 0;
    padding:0.5rem; 
    outline: solid black; 
-   xbox-shadow: 0px 4px 8px rgb(0,0,0, 1);
+  
    width:var(--width); 
    max-width: 100%;
-   xbox-sizing: border-box;
-   
    
 }
 
@@ -300,8 +295,7 @@ textarea {
 }
 
 .form-button {
-   xmargin:1rem auto; 
-   xpadding:2rem auto;
+  
    background-color: lightblue;  
    outline: solid black;
    box-shadow: 0px 4px 8px rgb(0,0,0, 1);
@@ -339,7 +333,7 @@ label {
 
 .input-err {
    border: 2px solid red;
-   xborder-radius: 1px;
+  
 }
 
 #error-msg, #info-msg {
@@ -347,7 +341,6 @@ label {
    padding-bottom:2rem; 
    white-space: normal;
    overflow-wrap:break-word;
-   xcolor: crimson;
    max-width: 100%;
    width: auto; 
    box-sizing: border-box;
@@ -374,8 +367,7 @@ label {
    align-items: center;
    margin:0;
    padding: 0;
-   xwidth:5%; 
-   xheight:auto; 
+  
    
 }
 .theme-switch-button img {
@@ -387,7 +379,7 @@ label {
 }
 
 .theme-switch-button img:hover {
-   xvisibility: hidden;
+  
    transform: translateY(-6px);
    transform: scale(1.2);
    transition:transform 0.2s ease; 
@@ -440,16 +432,13 @@ label {
    }
 
    input, textarea {
-      xvisibility: hidden;
+     
       margin: 1rem 0;
       padding:0.5rem; 
       outline: solid black; 
-      xbox-shadow: 0px 4px 8px rgb(0,0,0, 1);
+    
       width:var(--width); 
-      max-width: 100%;
-      xbox-sizing: border-box;
-      
-      
+      max-width: 100%;  
    }
 
    textarea {
@@ -533,8 +522,7 @@ label {
       align-items: center;
       margin:0;
       padding: 0;
-      xwidth:5%; 
-      xheight:auto; 
+     
       
    }
    .theme-switch-button img {
@@ -588,8 +576,6 @@ label {
      
    figcaption {
       font-size:1rem; 
-      -text-decoration: none;
-      -outline:none; 
    }
    details[open] p{
       font-size: 1.2rem;
@@ -652,8 +638,7 @@ label {
       padding:1rem; 
       width:100%; 
       border-radius: 1.5rem;
-      /* Testing purposes below */ 
-      -color:red; 
+    
    }
 
    .subpage_details ul{
@@ -712,20 +697,20 @@ label {
       display: var(--main-display);
       flex-direction: var(--display-direction);
       gap:1rem; 
+      width: 20%;
       max-width: 100%;
+      align-items: stretch;
       
    }
 
    input, textarea {
-      xvisibility: hidden;
+    
       margin: 1rem 0;
       padding:0.5rem; 
       outline: solid black; 
-      xbox-shadow: 0px 4px 8px rgb(0,0,0, 1);
       width:var(--width); 
-      max-width: 100%;
-      xbox-sizing: border-box;
-      
+      max-width: 100%;  
+      box-sizing: border-box;
       
    }
 
@@ -735,8 +720,7 @@ label {
    }
 
    .form-button {
-      xmargin:1rem auto; 
-      xpadding:2rem auto;
+   
       background-color: lightblue;  
       outline: solid black;
       box-shadow: 0px 4px 8px rgb(0,0,0, 1);
@@ -745,6 +729,9 @@ label {
       letter-spacing: 0.5rem;
       font-weight: bold;
       animation: form-fall 4s ease forwards;
+      width: var(--width);
+      max-width: 100%;
+      box-sizing: border-box;
    }
    label {
       color: white; 
@@ -753,28 +740,28 @@ label {
       text-shadow: var(--color-shadow); 
    }
 
-   #name-id {
+   #name-label {
       animation: form-fall 1s ease forwards;
    }
-   #name{
+   #name-input{
       animation: form-fall 1.5s ease forwards;
    }
-   #email-id {
+   #email-label {
       animation: form-fall 2s ease forwards;
    }
-   #email{
+   #email-input{
       animation: form-fall 2.5s ease forwards;
    }
-   #msg-id{
+   #message{
       animation: form-fall 3s ease forwards;
    }
-   #msg {
+   #msg-input {
       animation: form-fall 3.5s ease forwards;
    }
 
    .input-err {
       border: 2px solid red;
-      xborder-radius: 1px;
+     
    }
    
    #error-msg, #info-msg {
@@ -782,7 +769,7 @@ label {
       padding-bottom:2rem; 
       white-space: normal;
       overflow-wrap:break-word;
-      xcolor: crimson;
+     
       max-width: 100%;
       width: auto; 
       box-sizing: border-box;
@@ -810,8 +797,7 @@ label {
       align-items: center;
       margin:0;
       padding: 0;
-      xwidth:5%; 
-      xheight:auto; 
+    
       
    }
    .theme-switch-button img {
