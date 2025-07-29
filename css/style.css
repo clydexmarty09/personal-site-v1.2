@@ -288,12 +288,13 @@ input, textarea {
    width:var(--width); 
    max-width: 100%;  
    box-sizing: border-box;
-   height: 3vh; 
+   height: 2vh; 
    
 }
 
 textarea {
   padding-left: 0.5rem !important;
+  height:auto; 
  
 }
 
@@ -303,14 +304,14 @@ textarea {
    outline: solid black;
    box-shadow: 0px 4px 8px rgb(0,0,0, 1);
    font-family: var(--family-font);
-   font-size: 1rem;
+   font-size: 0.8rem;
    letter-spacing: 0.5rem;
    font-weight: bold;
    animation: form-fall 4s ease forwards;
    width: var(--width);
    max-width: 100%;
    box-sizing: border-box;
-   height:5vh; 
+   height:3vh; 
 }
 label {
    color: white; 
@@ -435,8 +436,7 @@ label {
       display: var(--main-display);
       flex-direction: var(--display-direction);
       gap:1rem; 
-      width: 20%;
-      max-width: 100%;
+      width: 50vw;
       align-items: stretch;
       
    }
@@ -454,6 +454,7 @@ label {
 
    textarea {
      padding-left: 0.5rem !important;
+     height:auto; 
     
    }
 
@@ -470,6 +471,7 @@ label {
       width: var(--width);
       max-width: 100%;
       box-sizing: border-box;
+      height:4vh; 
    }
    label {
       color: white; 
@@ -499,7 +501,7 @@ label {
 
    .input-err {
       border: 2px solid red;
-      xborder-radius: 1px;
+     
    }
    
    #error-msg, #info-msg {
@@ -507,7 +509,6 @@ label {
       padding-bottom:2rem; 
       white-space: normal;
       overflow-wrap:break-word;
-      xcolor: crimson;
       max-width: 100%;
       width: auto; 
       box-sizing: border-box;
@@ -710,8 +711,7 @@ label {
       display: var(--main-display);
       flex-direction: var(--display-direction);
       gap:1rem; 
-      width: 20%;
-      max-width: 100%;
+      width: 30vw;
       align-items: stretch;
       
    }
@@ -729,6 +729,7 @@ label {
 
    textarea {
      padding-left: 0.5rem !important;
+     height: auto;
     
    }
 
@@ -742,9 +743,9 @@ label {
       letter-spacing: 0.5rem;
       font-weight: bold;
       animation: form-fall 4s ease forwards;
-      width: var(--width);
-      max-width: 100%;
+      width: 100%;
       box-sizing: border-box;
+      height:2rem;
    }
    label {
       color: white; 
