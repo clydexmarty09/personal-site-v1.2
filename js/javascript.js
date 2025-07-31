@@ -4,3 +4,5 @@ class artCard extends HTMLElement {
     }
     // function here
 }
+
+customElements.define('art-card', artCard); 
