@@ -3,9 +3,14 @@ class artCard extends HTMLElement {
         super(); 
 
         const shadow = this.attachShadow({mode:'open'}); 
-        const img = document.createElement('img'); 
+
+        const img1 = document.createElement('img'); 
+        img1.src = "assets/gallery-pictures/webp/ghost-min.webp"; 
+        const img2 =  document.createElement('img'); 
+        img2.src = "assets/gallery-pictures/webp/untitled-1.webp"; 
+        
         const style = document.createElement('style'); 
-        img.src = "assets/gallery-pictures/webp/ghost-min.webp"; 
+        
 
         style.textContent = `
 
@@ -15,12 +20,12 @@ class artCard extends HTMLElement {
                 height: 14rem;
                 width:11rem;  
                 outline: solid white; 
-                display:flex; flex-direction:row; 
-            }
+                display:block; 
         
         `; 
 
-        shadow.appendChild(img); 
+        shadow.appendChild(img1); 
+        shadow.appendChild(img2); 
         shadow.appendChild(style); 
     }
     // function here
