@@ -1,4 +1,4 @@
-class projectCard extends HTMLElement {
+class artCard extends HTMLElement {
     constructor() {
         super(); 
     }
