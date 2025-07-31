@@ -6,6 +6,8 @@ class artCard extends HTMLElement {
 
         const img1 = document.createElement('img'); 
         img1.src = "assets/gallery-pictures/webp/ghost-min.webp"; 
+        
+        
         const img2 =  document.createElement('img'); 
         img2.src = "assets/gallery-pictures/webp/untitled-1.webp"; 
         
