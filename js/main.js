@@ -56,3 +56,4 @@ const cards = [
     }
   ];
   
+  localStorage.setItem('artCards', JSON.stringify(cards)); 
