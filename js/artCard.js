@@ -13,13 +13,15 @@ class artCard extends HTMLElement {
         img1.alt = 'Untitled';  */ 
 
         //picture tag 
-        const pic = document.createElement('picture'); 
+        const picture = document.createElement('picture'); 
         const sourceWebp = document.createElement('source'); // need this for source tag inside picture 
         sourceWebp.type = 'image/webp'
         sourceWebp.srcset = this.getAttribute('img'); 
         const img = document.createElement('img')
         img.src = this.getAttribute('img') || ''; 
         img.alt = this.getAttribute('alt') || 'Untitled'; 
+        picture.appendChild(sourceWebp); 
+        picture.appendChild(img); 
 
         //container
         const container = document.createElement('div'); 
@@ -44,14 +46,11 @@ class artCard extends HTMLElement {
                 display:block;
             } 
         `; 
-        shadow.appendChild(sourceWebp); 
-        shadow.appendChild(pic); 
+        container.appendChild(title); 
+        container.appendChild(picture); 
+
         shadow.appendChild(style); 
-        shadow.appendChild(img); 
-        shadow.appendChild(container);
-        shadow.appendChild(title);  
-        //shadow.appendChild(img2); 
-       
+        shadow.appendChild(container); 
     }
     // function here
 }
