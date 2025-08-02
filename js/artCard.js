@@ -38,8 +38,8 @@ class artCard extends HTMLElement {
             img {
                 margin:1rem; 
                 padding:0.5rem; 
-                height: 14rem;
-                width:11rem;  
+                height: 10rem;
+                width:8rem;  
                 outline: solid white; 
                 display:block;
             } 
