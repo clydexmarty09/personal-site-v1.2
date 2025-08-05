@@ -383,11 +383,11 @@ label {
    width: 1.5rem;
    height:1.5rem;
    image-rendering: pixelated;
-   filter:drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
+   filter:drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));   /* adds shadow to theme icons! */
    
 }
 
-.theme-switch-button img:hover {
+.theme-switch-button img:hover { /*not applicable on mobile */ 
   
    transform: translateY(-6px);
    transform: scale(1.2);
