@@ -84,70 +84,27 @@
        text-shadow: var(--color-shadow); 
     }
  
-    /* 
-    #name-label {
-       animation: form-fall 1s ease forwards;
-    }
-    #name-input{
-       animation: form-fall 1.5s ease forwards;
-    }
-    #email-label {
-       animation: form-fall 2s ease forwards;
-    }
-    #email-input{
-       animation: form-fall 2.5s ease forwards;
-    }
-    #message{
-       animation: form-fall 3s ease forwards;
-    }
-    #msg-input {
-       animation: form-fall 3.5s ease forwards;
-    } */ 
- 
+   
     .input-err {
        border: 2px solid red;
       
     }
     
     #error-msg, #info-msg {
-       margin: 0, 0, 3rem, 0; 
-       padding-bottom:2rem; 
-       white-space: normal;
-       overflow-wrap:break-word;
-       max-width: 100%;
-       width: auto; 
-       box-sizing: border-box;
-       text-shadow: 0px 4px 6px darkred;
-       font-weight: bold;
-       font-size: 1.2rem;
+      
+       font-size: 1rem;
     }
  
     /*Code below is for theme button*/
     .theme-switch {
-       
-       
-       display: flex;
-       gap: 4rem; 
-       flex-direction: row;
-       align-items: center;
-       justify-content: center;
-       margin: 0 auto;
+        gap: 6em;
+        margin:1rem; 
     }
-    .theme-switch-button {
-       background: none;
-       border: hidden;
-       flex-direction: row;
-       display: flex;
-       align-items: center;
-       margin:0;
-       padding: 0;
-      
-       
-    }
+   
     .theme-switch-button img {
-       width: 2.1rem;
-       height:2.1rem;
-       image-rendering: pixelated;
+       width: 1.8rem;
+       height:1.8rem;
+      
     }
  }
  

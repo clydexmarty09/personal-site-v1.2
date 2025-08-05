@@ -341,8 +341,8 @@ label {
 }
 
 .input-err {
-   border: 2px solid red;
-  
+   border: 1px solid red;
+   
 }
 
 #error-msg, #info-msg {
@@ -355,7 +355,10 @@ label {
    box-sizing: border-box;
    text-shadow: 0px 4px 6px darkred;
    font-weight: bold;
-   font-size: 1.2rem;
+   font-size: 0.8rem;
+
+   
+ 
 }
 
 /*Code below is for theme button*/
@@ -380,10 +383,10 @@ label {
    
 }
 .theme-switch-button img {
-   width: 1.5rem;
-   height:1.5rem;
+   width: 1.2rem;
+   height:1.2rem;
    image-rendering: pixelated;
-   filter:drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));   /* adds shadow to theme icons! */
+   filter:drop-shadow(6px 6px 10px rgba(0, 0, 0, 0.5));   /* adds shadow to theme icons! */
    
 }
 
