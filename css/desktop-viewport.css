@@ -209,6 +209,7 @@
        text-shadow: var(--color-shadow); 
     }
  
+    /* 
     #name-label {
        animation: form-fall 1s ease forwards;
     }
@@ -226,7 +227,7 @@
     }
     #msg-input {
        animation: form-fall 3.5s ease forwards;
-    }
+    } */
  
     .input-err {
        border: 2px solid red;
