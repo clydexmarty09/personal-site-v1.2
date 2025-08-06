@@ -3,9 +3,7 @@
 /* Media Queries */
 /* IPADS*/
 @media screen and (min-width:600px){
-    body {
-       font-size:1rem; 
-    }
+   
     h1{
        font-size:5rem; 
        padding:1rem; 
@@ -16,12 +14,8 @@
     }
  
     nav {
-       display: var(--main-display);
-       flex-wrap: wrap;
-       flex-direction: row;
-       align-items: center;
-       justify-content: center;
-       gap:1rem; 
+      gap: 1rem; 
+      flex-direction: row;
     }
  
     .main_nav {
@@ -45,20 +39,6 @@
        align-items: stretch;
        
     }
- 
-    /*
-    input, textarea {
-     
-       margin: 1rem 0;
-       padding:0.5rem; 
-       outline: solid black; 
-       width:var(--width); 
-       max-width: 100%;  
-       box-sizing: border-box;
-       
-    } */
- 
-    
     
     
     .form-button {

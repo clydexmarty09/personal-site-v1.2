@@ -3,11 +3,7 @@
 /* LARGE screens -----------------------------------------*/
 @media screen and (min-width:900px) {
    
-    body {
-       font-size:1rem; 
-       margin:0; 
-       padding:0; 
-    }
+   
     header {
        margin: 1rem 1rem; 
        padding: 1rem 1rem; 
@@ -16,15 +12,11 @@
        margin: 1rem; 
        padding:0;
        font-size:6rem; 
+       
     }
-    nav {
-       display: var(--main-display);
-       flex-wrap: wrap;
-       flex-direction: row;
-       align-items: center;
-       justify-content: center;
-       gap:6rem; 
-    }
+    
+    
+
     nav figure {
        display: flex;
        flex-direction: column;
@@ -34,14 +26,7 @@
        text-align: center;
      }
    
-    nav a {
-    text-decoration: none;
-    }
     
-    nav a img {
-       outline: 1.5px solid white; 
-       outline-offset: 6px; 
-    }
       
     figcaption {
        font-size:1rem; 
@@ -50,10 +35,12 @@
        font-size: 1.2rem;
        align-items: left; 
     }
+
+    aside {
+      font-size:0.8rem; 
+    }
  
     .main_nav {
-      
-    
        display: var(--main-display);
        flex-direction: row;
        align-items: center;
@@ -168,7 +155,6 @@
        font-size: 1.2rem; 
     } 
 
- 
     .input-err {
        border: 2px solid red;
       
