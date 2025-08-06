@@ -88,7 +88,7 @@ nav figure:hover:active {
  h1 {
    margin:1rem; 
    padding: 0; 
-   font-size :3rem;
+   font-size :4rem;
    text-shadow: 2px 2px 0 black; 
    animation: h1Slide 0.6s ease forwards; 
    font-family: var(--signature-font);
@@ -100,6 +100,8 @@ h2 {
 details {
    
    padding: 4rem; 
+   padding-bottom: 0; 
+   margin-bottom:2rem; 
    text-shadow: 1px 1px 0 black; 
 }
 
@@ -111,19 +113,24 @@ details summary:hover{
    transition:transform 0.2s ease;  
    transform: translateY(-4px);
 }
+
+details[open] summary{
+   opacity: 50%; 
+}
  details[open] p {
-   margin: 1rem auto; 
-   padding:0; 
-   font-size: 1rem;
+   margin: 1rem auto; ; 
+   font-size: 0.8rem;
    max-width: 70ch;
    text-align: justify;
    line-height: 1.5;
+   margin-bottom: 0; 
+   padding-bottom: 0; 
  }
 
  /* editing class fighter images */ 
 .fighter-img {
-   width: 9rem;
-   height:9rem; 
+   width: 7rem;
+   height:7rem; 
    max-width:150px ;
    max-height: 150px; 
    object-fit: cover;
@@ -134,17 +141,16 @@ figcaption {
    color: white; 
    padding-top: 1rem;
    text-shadow: 0.7px 0.7px 0 black; 
-   font-size: 1.2rem;
+   font-size: 1rem;
 } 
 
-nav { 
+.char_nav { 
    flex-wrap: wrap;
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    justify-content: center;
-   gap: 2rem;
+   gap: 0.2rem;
    transition:transform 0.2s ease; 
- 
 }
 
 nav a {
@@ -184,7 +190,7 @@ footer blockquote{
 
 
 h2 {
-   font-size: 1.5rem;
+   font-size: 1.2rem;
    text-shadow:  2px 2px 0 black; 
 }
 
@@ -236,6 +242,9 @@ h2 {
 .main_nav {          
    display: var(--main-display);
    flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 4rem; 
 }
 
 .main_nav a {
@@ -243,8 +252,8 @@ h2 {
   
 }
 .main_nav a img {
-   height: 2rem;
-   width:2rem; 
+   height: 1.5rem;
+   width:1.5rem; 
    outline: none;
    filter:drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
    

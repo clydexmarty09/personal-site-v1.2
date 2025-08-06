@@ -27,7 +27,6 @@
      }
    
     
-      
     figcaption {
        font-size:1rem; 
     }
@@ -40,6 +39,11 @@
       font-size:0.8rem; 
     }
  
+    .fighter-img {
+      width: 9rem;
+      height:9rem; 
+     
+   }
     .main_nav {
        display: var(--main-display);
        flex-direction: row;
