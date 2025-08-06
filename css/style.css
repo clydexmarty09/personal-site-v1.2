@@ -282,6 +282,7 @@ details.subpage_details:not(:has(ul)) {
 
 input, textarea {
  
+   
    margin: 1rem 0;
    padding:0.5rem; 
    outline: solid black; 
@@ -294,6 +295,7 @@ input, textarea {
 
 textarea {
   padding-left: 0.5rem !important;
+  padding-top:0; 
   height:auto; 
  
 }

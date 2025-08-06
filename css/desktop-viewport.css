@@ -156,52 +156,20 @@
  
  
     /* form.html edits*/
-    .form-head {
-       font-family: var(--family-font);
-       font-size: 4rem;
-    }
+    
     .form {
-       margin:2rem 2rem; 
-       padding: 1rem 1rem; 
-       display: var(--main-display);
-       flex-direction: var(--display-direction);
-       gap:1rem; 
-       width: 30vw;
-       align-items: stretch;
        
-    }
- 
-    input, textarea {
-     
-       margin: 1rem 0;
-       padding:0.5rem; 
-       outline: solid black; 
-       width:var(--width); 
-       max-width: 100%;  
-       box-sizing: border-box;
+       width: 35vw;
        
-    }
+    } 
  
-    textarea {
-      padding-left: 0.5rem !important;
-      height: auto;
-     
-    }
- 
+    
+    
     .form-button {
     
-       background-color: lightblue;  
-       outline: solid black;
-       box-shadow: 0px 4px 8px rgb(0,0,0, 1);
-       font-family: var(--family-font);
-       font-size: 1rem;
-       letter-spacing: 0.5rem;
-       font-weight: bold;
-       animation: form-fall 4s ease forwards;
-       width: 100%;
-       box-sizing: border-box;
-       height:2rem;
-    }
+       font-size: 1.2rem; 
+    } 
+
     label {
        color: white; 
        font-size: 1.1rem;
@@ -223,7 +191,7 @@
     /*Code below is for theme button*/
     .theme-switch {
       margin-top: 1rem;
-       gap: 6rem; 
+      gap: 6rem; 
        
     }
     
