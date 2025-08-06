@@ -13,13 +13,14 @@
     font-family: Impact, fantasy;
 }
 
+/* 
 .winter-theme {
 
     background-image: url(../assets/backgorunds/winter-theme.webp);
     font-family: 'American Typewriter', serif;
-    color: darkred; 
+    color: black; 
 
-}
+} */ 
 
 .winter-theme hgroup h1 {
     font-family: 'Times New Roman', Times, serif;
