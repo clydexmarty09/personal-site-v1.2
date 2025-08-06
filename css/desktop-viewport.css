@@ -162,21 +162,12 @@
        width: 35vw;
        
     } 
- 
-    
     
     .form-button {
     
        font-size: 1.2rem; 
     } 
 
-    label {
-       color: white; 
-       font-size: 1.1rem;
-       letter-spacing: 0.5rem ;
-       text-shadow: var(--color-shadow); 
-    }
- 
  
     .input-err {
        border: 2px solid red;
