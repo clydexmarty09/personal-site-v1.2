@@ -43,6 +43,9 @@ body {
    background-attachment: fixed;
    align-items: center;
    font-size:1rem;   /* global */ 
+
+   max-width:100vw;
+   overflow-x: hidden;
  }
 
  aside {
@@ -106,7 +109,8 @@ details {
 }
 
 details summary {
-   font-size: 1.3rem;
+   font-size: 1rem;
+   
 }
 
 details summary:hover{
@@ -203,11 +207,13 @@ h2 {
    padding:1rem; 
    width:100%; 
    border-radius: 1.5rem;
+
+  
   
 }
 
 .subpage_details ul{
-   line-height: 2;
+   line-height: 4;
    align-items: left;
    list-style-position: outside;
    
@@ -218,7 +224,7 @@ h2 {
    margin:0;  
    padding-left:4rem; 
    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
-   font-size:0.9rem; 
+   font-size:0.8rem; 
 }
 
 .subpage_details[open] summary {

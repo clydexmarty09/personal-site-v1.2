@@ -87,6 +87,7 @@
     /* Styles for cs.html below */
     h2 {
        text-shadow:  2px 2px 0 black; 
+       font-size: 1.3rem;
     }
     /* Change below to .resume {} */
     .subpage_details {
@@ -102,7 +103,7 @@
     }
  
     .subpage_details ul{
-       line-height: 2;
+       
        align-items: left;
        list-style-position: outside;
        
@@ -113,7 +114,7 @@
        margin:0;  
        padding-left:4rem; 
        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
-       font-size:0.9rem; 
+       font-size:1rem; 
     }
  
     .subpage_details[open] summary {
@@ -121,7 +122,9 @@
      
     }
  
-    
+   details summary {
+      font-size: 1.2rem;
+   } 
     .subpage_nav{
        padding-bottom: 1.5rem;
     }
