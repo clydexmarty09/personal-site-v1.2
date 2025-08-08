@@ -155,7 +155,7 @@ figcaption {
    display: flex;
    flex-direction: row;
    justify-content: center;
-   gap: 0;
+   gap: 0.2rem;
    transition:transform 0.2s ease; 
 }
 
@@ -387,21 +387,14 @@ label {
    justify-content: center;
    margin: 0 auto;
    padding-bottom: 2rem;
-} */ 
+}  */ 
 .theme-switch-button {
    background: none;
-   border: hidden;
-   flex-direction: row;
-   display: flex;
-   align-items: center;
-   margin:0;
-   padding: 0;
-  
-   
+   border: hidden; 
 }
 .theme-switch-button img {
-   width: 1.3rem;
-   height:1.3rem;
+   width: 1.5rem;
+   height:1.5rem;
    image-rendering: pixelated;
    filter:drop-shadow(6px 6px 10px rgba(0, 0, 0, 0.5));   /* adds shadow to theme icons! */
    display: flex;
