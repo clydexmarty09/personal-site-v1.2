@@ -1,16 +1,13 @@
 <!DOCTYPE html> 
 <html lang="en">
 <head>
-
     
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!--<meta name="description" content="This site illiustrates basic MathML utlization: Einstein's famous relativity formula"> -->
    <link rel="stylesheet" href="/css/style.css" media="screen">
    <link href="/css/ipad-viewport.css" rel="stylesheet" media="screen">
     <link href="/css/desktop-viewport.css" rel="stylesheet" media="screen">
    <link rel="icon" href ="/favicon.ico" type="image/x-icon">
-   <!-- Importing a custom font -->
    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
    <title> clydeXmarty: HOME </title>
   
@@ -22,7 +19,7 @@
         <p><strong> Javascript is required for theme toggling! </strong></p>
     </noscript>
     <header>
-        
+
         <!-- 
         <div class="theme-switch"> 
             <button type="button" class="theme-switch-button" data-theme="dark-theme">
@@ -35,13 +32,11 @@
                 <img src="/assets/top_navigation_images/sun-symbol-compressed.webp" alt="day-theme"> 
             </button>
         </div> -->
-        <!--
         <button type="button" class="theme-switch-button" id="theme"> 
             <img src="/assets/top_navigation_images/sun-symbol-compressed.webp" alt="night-mode">    
-        </button>   -->
-
+        </button>   
         <script> 
-           /* 
+           
             function toggleTheme() {
                 document.body.classList.toggle("dark-theme"); 
                 if(document.body.classList.contains("dark-theme")) {
@@ -55,7 +50,9 @@
             btn.addEventListener("click", toggleTheme);
             if(localStorage.getItem("theme")==="dark-theme") {
                 document.body.classList.add("dark-theme"); 
-            } */ 
+            } 
+
+            /*
             const themes=["dark-theme", "day-theme","city-theme"];
             const buttons = document.querySelectorAll(".theme-switch-button"); 
             const body = document.body; 
@@ -63,7 +60,7 @@
             function applyTheme(theme) {
                 body.classList.remove(...themes);   // remove all themes 
 
-                if(themes.includes(theme)) {
+                if (themes.includes(theme)) {
                     body.classList.add(theme); 
                     localStorage.setItem("theme", theme); 
                 } else {
@@ -71,16 +68,16 @@
                 }
             }
 
-            buttons.forEach(btn=>{
-                btn.addEventListener("click", ()=> {
-                    applyTheme(btn.dataset.theme);
-                });
-            }); 
+            buttons.forEach(btn=>{                                                                                            
+                btn.addEventListener("click", ()=> {                                                                                                           
+                    applyTheme(btn.dataset.theme);                                                            
+                });                                                                                                                                                                                 
+            });                                                           
 
             const recent = localStorage.getItem("theme"); 
             if(recent) {
                 applyTheme(recent); 
-            }
+            } */ 
 
         </script>
         <nav class="main_nav">
@@ -92,11 +89,9 @@
             </a>
         </nav>
         
-        <hgroup>
-            
+        <hgroup>            
             <h1> Clyde Marty </h1>
             <h2> CHOOSE YOUR CHARACTER </h2>
-
         </hgroup>
 
     </header>
@@ -144,5 +139,4 @@
         </aside>
     </footer>
 </body>
-
 </html>
