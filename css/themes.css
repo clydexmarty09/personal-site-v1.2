@@ -1,38 +1,4 @@
 /* themes.css */
-
-/* Fall theme */
-/*
-.city-theme {
-
-    background-image: url(../assets/backgorunds/Untitled\ Project.jpg);
-    font-family: 'Marker Felt', fantasy;
-    color: cyan; 
-}
-/*
-.city-theme hgroup h1{
-    
-    font-family: Impact, fantasy;
-}
-
-
-.winter-theme {
-
-    background-image: url(../assets/backgorunds/winter-theme.webp);
-    font-family: 'American Typewriter', serif;
-    color: black; 
-
-} 
-
-/
-.winter-theme hgroup h1 {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.day-theme { 
-
-    background-image: url(../assets/backgorunds/bg_final_compress.webp);
-    color:var(--text-color);
-} */ 
 .dark-theme {
     background-image: url(../assets/backgorunds/blurred_night_mode.webp);
     color:var(--secondary-color);

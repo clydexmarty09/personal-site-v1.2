@@ -373,21 +373,8 @@ label {
    text-shadow: 0px 4px 6px darkred;
    font-weight: bold;
    font-size: 0.8rem;
-
-   
- 
 }
 
-/*Code below is for theme button
-.theme-switch {
-   display: flex;
-   gap: 4rem; 
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
-   margin: 0 auto;
-   padding-bottom: 2rem;
-}  */ 
 .theme-switch-button {
    background: none;
    border: hidden; 

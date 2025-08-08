@@ -5,7 +5,7 @@
 @media screen and (min-width:600px){
    
     h1{
-       font-size:5rem; 
+       font-size:7rem; 
        padding:1rem; 
     }
    
@@ -17,6 +17,11 @@
       gap: 1rem; 
       
     }
+
+    .fighter-img {
+      width: 8rem;
+      height:8rem; 
+   }
  
     .main_nav {
        display: var(--main-display);
