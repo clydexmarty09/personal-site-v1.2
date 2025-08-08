@@ -13,54 +13,18 @@
 <body>
 
     <header>
-        <div class="theme-switch"> 
-            <button type="button" class="theme-switch-button" data-theme="dark-theme">
-                <img src="/assets/top_navigation_images/dark-theme-toggle.webp" alt="night-theme"> 
-            </button>
-            <button type="button" class="theme-switch-button" data-theme="city-theme">
-                <img src="/assets/top_navigation_images/city-toggle.webp" alt="city-theme"> 
-            </button>
-            <button type="button" class="theme-switch-button" data-theme="day-theme">
-                <img src="/assets/top_navigation_images/sun-symbol-compressed.webp" alt="day-theme"> 
-            </button>
-            
-        </div>   
-
-        <script> 
-            
-            const themes=["dark-theme", "day-theme","city-theme"];
-            const buttons = document.querySelectorAll(".theme-switch-button"); 
-            const body = document.body; 
-            
-            function applyTheme(theme) {
-                body.classList.remove(...themes);   // remove all themes 
-
-                if(themes.includes(theme)) {
-                    body.classList.add(theme); 
-                    localStorage.setItem("theme", theme); 
-                } else {
-                    localStorage.removeItem("theme"); 
-                }
-            }
-
-            buttons.forEach(btn=>{
-                btn.addEventListener("click", ()=> {
-                    applyTheme(btn.dataset.theme);
-                });
-            }); 
-
-            const recent = localStorage.getItem("theme"); 
-            if(recent) {
-                applyTheme(recent); 
-            }
-
-        </script>
              <!-- top navigation -->
         <nav class="main_nav">
         <a href="index.html"> 
             <img src="/assets/top_navigation_images/home_compressed.webp" alt="Homepage" title="Homepage">
         </a>
+        <div> 
+            <button type="button" class="theme-switch-button" id="theme"> 
+                <img src="/assets/top_navigation_images/dark-theme-toggle.webp" alt="night-mode" id="theme-image">    
+            </button>  
+        </div>
         </nav>
+
         <h1 class="form-head"> CONTACT ME &phone; </h1>
 
         
@@ -88,7 +52,44 @@
     </form> 
  
 
+   
+    <hr> 
+    <footer>
+        <aside>
+            <blockquote> 
+                Website <b>v1.1</b>: <ins> Added CSS components and optimized images</ins>
+            </blockquote>
+        </aside>
+    </footer>
     <script>
+         
+        let themeImg = document.getElementById('theme-image'); 
+        let switchSound = new Audio('/assets/sounds/light-switch.wav');  
+        function toggleTheme() {
+
+            switchSound.currentTime = 0; 
+            switchSound.play(); 
+
+            document.body.classList.toggle("dark-theme"); 
+            if(document.body.classList.contains("dark-theme")) {
+                localStorage.setItem("theme", "dark-theme"); 
+                themeImg.src = '/assets/top_navigation_images/sun-symbol-compressed.webp'; 
+
+            } else {
+                localStorage.removeItem("theme"); 
+                themeImg.src = '/assets/top_navigation_images/dark-theme-toggle.webp'; 
+            }
+        }
+
+        
+        const btn = document.getElementById("theme"); 
+        btn.addEventListener("click", toggleTheme);
+        if(localStorage.getItem("theme")==="dark-theme") {
+            document.body.classList.add("dark-theme");
+            themeImg.src = '/assets/top_navigation_images/sun-symbol-compressed.webp';
+        } else {
+            themeImg.src = '/assets/top_navigation_images/dark-theme-toggle.webp'; 
+        }
 
         const name = document.getElementById("name-input");
         const email = document.getElementById("email-input"); 
@@ -175,14 +176,6 @@
 
     </script>
 
-    <hr> 
-    <footer>
-        <aside>
-            <blockquote> 
-                Website <b>v1.1</b>: <ins> Added CSS components and optimized images</ins>
-            </blockquote>
-        </aside>
-    </footer>
 </body>
 
 

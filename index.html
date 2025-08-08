@@ -20,21 +20,6 @@
         <p><strong> Javascript is required for theme toggling! </strong></p>
     </noscript>
     <header>
-
-        <!-- 
-        <div class="theme-switch"> 
-            <button type="button" class="theme-switch-button" data-theme="dark-theme">
-                <img src="/assets/top_navigation_images/dark-theme-toggle.webp" alt="night-theme"> 
-            </button>
-            <button type="button" class="theme-switch-button" data-theme="city-theme">
-                <img src="/assets/top_navigation_images/city-toggle.webp" alt="city-theme"> 
-            </button>
-            <button type="button" class="theme-switch-button" data-theme="day-theme">
-                <img src="/assets/top_navigation_images/sun-symbol-compressed.webp" alt="day-theme"> 
-            </button>
-        </div> -->
-
-        
        
         <nav class="main_nav">
             <a href="index.html"> 
@@ -128,33 +113,6 @@
         } else {
             themeImg.src = '/assets/top_navigation_images/dark-theme-toggle.webp'; 
         }
-
-        /*
-        const themes=["dark-theme", "day-theme","city-theme"];
-        const buttons = document.querySelectorAll(".theme-switch-button"); 
-        const body = document.body; 
-        
-        function applyTheme(theme) {
-            body.classList.remove(...themes);   // remove all themes 
-
-            if (themes.includes(theme)) {
-                body.classList.add(theme); 
-                localStorage.setItem("theme", theme); 
-            } else {
-                localStorage.removeItem("theme"); 
-            }
-        }
-
-        buttons.forEach(btn=>{                                                                                            
-            btn.addEventListener("click", ()=> {                                                                                                           
-                applyTheme(btn.dataset.theme);                                                            
-            });                                                                                                                                                                                 
-        });                                                           
-
-        const recent = localStorage.getItem("theme"); 
-        if(recent) {
-            applyTheme(recent); 
-        } */ 
 
     </script>
 </body>
