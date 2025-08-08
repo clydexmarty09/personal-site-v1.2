@@ -3,6 +3,7 @@
 <head>
     
    <meta charset="UTF-8">
+
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="/css/style.css" media="screen">
    <link href="/css/ipad-viewport.css" rel="stylesheet" media="screen">
@@ -44,7 +45,7 @@
             </a>
             <div> 
                 <button type="button" class="theme-switch-button" id="theme"> 
-                    <img src="/assets/top_navigation_images/sun-symbol-compressed.webp" alt="night-mode" id="theme-image">    
+                    <img src="/assets/top_navigation_images/dark-theme-toggle.webp" alt="night-mode" id="theme-image">    
                 </button>  
             </div>
         </nav>
@@ -122,8 +123,11 @@
         const btn = document.getElementById("theme"); 
         btn.addEventListener("click", toggleTheme);
         if(localStorage.getItem("theme")==="dark-theme") {
-            document.body.classList.add("dark-theme"); 
-        } 
+            document.body.classList.add("dark-theme");
+            themeImg.src = '/assets/top_navigation_images/sun-symbol-compressed.webp';
+        } else {
+            themeImg.src = '/assets/top_navigation_images/dark-theme-toggle.webp'; 
+        }
 
         /*
         const themes=["dark-theme", "day-theme","city-theme"];
