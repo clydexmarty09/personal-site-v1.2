@@ -2,7 +2,7 @@
 .dark-theme {
     background-image: url(../assets/backgorunds/blurred_night_mode.webp);
     color:var(--secondary-color);
-    font-family: Apple Chancery, cursive; 
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 .dark-theme hgroup h1 {
