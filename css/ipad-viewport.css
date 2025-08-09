@@ -40,7 +40,7 @@
        display: var(--main-display);
        flex-direction: var(--display-direction);
        gap:1rem; 
-       width: 50vw;
+       width: 70vw;
        align-items: stretch;
        
     }
@@ -73,10 +73,5 @@
         margin:1rem; 
     }
    
-    .theme-switch-button img {
-       width: 1.8rem;
-       height:1.8rem;
-      
-    }
  }
  

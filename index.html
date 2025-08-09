@@ -6,8 +6,8 @@
 
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="/css/style.css" media="screen">
-   <link href="/css/ipad-viewport.css" rel="stylesheet" media="screen">
-    <link href="/css/desktop-viewport.css" rel="stylesheet" media="screen">
+   <link href="/css/ipad-viewport.css" rel="stylesheet" media="(min-width:600px)">
+   <link href="/css/desktop-viewport.css" rel="stylesheet" media="(min-width:900px)">
    <link rel="icon" href ="/favicon.ico" type="image/x-icon">
    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
    <title> clydeXmarty: HOME </title>
@@ -88,6 +88,7 @@
            
         let themeImg = document.getElementById('theme-image'); 
         let switchSound = new Audio('/assets/sounds/light-switch.wav');  
+        
         function toggleTheme() {
 
             switchSound.currentTime = 0; 
@@ -103,11 +104,14 @@
                 themeImg.src = '/assets/top_navigation_images/dark-theme-toggle.webp'; 
             }
         }
+
         const btn = document.getElementById("theme"); 
         btn.addEventListener("click", toggleTheme);
+        
         if(localStorage.getItem("theme")==="dark-theme") {
             document.body.classList.add("dark-theme");
             themeImg.src = '/assets/top_navigation_images/sun-symbol-compressed.webp';
+           
         } else {
             themeImg.src = '/assets/top_navigation_images/dark-theme-toggle.webp'; 
         }
